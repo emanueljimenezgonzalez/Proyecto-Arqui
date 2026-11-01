@@ -1,0 +1,14 @@
+[
+  {
+    "id": "demo-001",
+    "name": "Videojuego de ejemplo",
+    "platforms": ["PC"],
+    "release_date": "2024-01-01",
+    "reference_price": 39.99,
+    "image_url": "",
+    "metacritic_score": null,
+    "hltb_main_hours": null,
+    "offers": [],
+    "updated_at": null
+  }
+]

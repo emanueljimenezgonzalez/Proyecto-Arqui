@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Hottest Deals | Videojuegos</title>
+  <link rel="stylesheet" href="{{ url_for('static', path='/styles.css') }}">
+</head>
+<body>
+  <header class="site-header">
+    <div>
+      <p class="eyebrow">Catálogo de ofertas</p>
+      <h1>Hottest Deals</h1>
+      <p>Precios y datos de videojuegos en un solo lugar.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <form class="filters" method="get">
+      <label>Plataforma
+        <input name="platform" value="{{ platform }}" placeholder="Ej. PC, PS5, Switch">
+      </label>
+      <label>Ordenar por
+        <select name="sort">
+          <option value="name" {% if sort == "name" %}selected{% endif %}>Nombre</option>
+          <option value="price" {% if sort == "price" %}selected{% endif %}>Precio</option>
+          <option value="discount" {% if sort == "discount" %}selected{% endif %}>Descuento</option>
+          <option value="score" {% if sort == "score" %}selected{% endif %}>Metacritic</option>
+        </select>
+      </label>
+      <button type="submit">Aplicar</button>
+    </form>
+
+    <section class="grid">
+      {% for game in games %}
+      <article class="card">
+        {% if game.image_url %}
+          <img class="cover" src="{{ game.image_url }}" alt="Portada de {{ game.name }}">
+        {% else %}
+          <div class="cover placeholder">Sin imagen</div>
+        {% endif %}
+        <div class="card-content">
+          <h2>{{ game.name }}</h2>
+          <p class="platforms">{{ game.platforms | join(", ") }}</p>
+          <p class="price">
+            {% if game.best_price is not none %}₡ / $ {{ "%.2f"|format(game.best_price) }}{% else %}Precio pendiente{% endif %}
+          </p>
+          <p>Descuento: {{ game.discount_percent }}%</p>
+          <p>Metacritic: {{ game.metacritic_score if game.metacritic_score is not none else "Sin dato" }}</p>
+          <details>
+            <summary>Ver detalles y tiendas</summary>
+            <p>Fecha de lanzamiento: {{ game.release_date or "Sin dato" }}</p>
+            <p>HowLongToBeat: {{ game.hltb_main_hours or "Sin dato" }} horas</p>
+            <ul>
+              {% for offer in game.offers %}
+              <li>
+                {{ offer.store }}:
+                {% if offer.current_price is not none %}{{ offer.current_price }}{% else %}Precio pendiente{% endif %}
+                {% if offer.url %}<a href="{{ offer.url }}" target="_blank" rel="noopener noreferrer">Ver tienda</a>{% endif %}
+              </li>
+              {% endfor %}
+            </ul>
+            <small>Última actualización: {{ game.updated_at or "Pendiente" }}</small>
+          </details>
+        </div>
+      </article>
+      {% else %}
+      <p>No hay videojuegos en el REPO. Agreguen registros a app/repo/games.json.</p>
+      {% endfor %}
+    </section>
+  </main>
+</body>
+</html>

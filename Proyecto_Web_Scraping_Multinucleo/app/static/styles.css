@@ -1,0 +1,23 @@
+:root { font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: #172033; background: #f4f6fa; }
+* { box-sizing: border-box; }
+body { margin: 0; }
+.site-header { background: #172033; color: white; padding: 2.5rem max(1.25rem, calc((100% - 1100px) / 2)); }
+.site-header h1 { margin: .25rem 0; font-size: clamp(2rem, 5vw, 3.2rem); }
+.site-header p { margin: .4rem 0; }
+.eyebrow { text-transform: uppercase; letter-spacing: .12em; font-size: .8rem; }
+.container { max-width: 1100px; margin: 1.5rem auto; padding: 0 1rem; }
+.filters { display: flex; flex-wrap: wrap; gap: 1rem; align-items: end; background: white; padding: 1rem; border-radius: 12px; margin-bottom: 1.25rem; }
+.filters label { display: grid; gap: .35rem; }
+input, select, button { padding: .65rem .8rem; border: 1px solid #cbd2df; border-radius: 8px; font: inherit; }
+button { background: #2358d5; color: white; border: 0; cursor: pointer; }
+.grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(245px, 1fr)); gap: 1rem; }
+.card { background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 3px 12px #15203a12; }
+.cover { display: block; width: 100%; height: 190px; object-fit: cover; background: #e5e9f1; }
+.placeholder { display: grid; place-items: center; color: #5c667a; }
+.card-content { padding: 1rem; }
+.card h2 { font-size: 1.1rem; margin: 0 0 .5rem; }
+.platforms { color: #5c667a; font-size: .9rem; }
+.price { font-size: 1.3rem; font-weight: 700; }
+summary { cursor: pointer; font-weight: 600; }
+a { color: #2358d5; }
+small { overflow-wrap: anywhere; }
