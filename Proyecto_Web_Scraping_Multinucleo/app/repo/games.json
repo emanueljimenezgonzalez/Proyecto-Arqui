@@ -1,14 +1,6402 @@
 [
   {
-    "id": "demo-001",
-    "name": "Videojuego de ejemplo",
-    "platforms": ["PC"],
-    "release_date": "2024-01-01",
+    "id": "steam-413150",
+    "name": "Stardew Valley",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-02-26",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/413150/header.jpg?t=1786554168",
+    "metacritic_score": 89,
+    "hltb_main_hours": 53.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/413150"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/stardew-valley-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:10Z"
+  },
+  {
+    "id": "steam-367520",
+    "name": "Hollow Knight",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-02-24",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/367520/3c3489495136b26b34f8a9543c7f5645b99d388c/header.jpg?t=1776125684",
+    "metacritic_score": 87,
+    "hltb_main_hours": 27.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/367520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 15.0,
+        "regular_price": 15.0,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hollow-knight-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:15Z"
+  },
+  {
+    "id": "steam-1030300",
+    "name": "Hollow Knight: Silksong",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-04",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1030300/7983574d464e6559ac7e24275727f73a8bcca1f3/header.jpg?t=1776125736",
+    "metacritic_score": 90,
+    "hltb_main_hours": 28.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1030300"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hollow-knight-silksong-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:08Z"
+  },
+  {
+    "id": "steam-945360",
+    "name": "Among Us",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-11-16",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/945360/d611f3f87743b5121532023b1d3ee2dd0e96e772/header.jpg?t=1793821899",
+    "metacritic_score": 85,
+    "hltb_main_hours": 9.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/945360"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 5.0,
+        "regular_price": 5.0,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/among-us-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:13Z"
+  },
+  {
+    "id": "steam-1671210",
+    "name": "DELTARUNE",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-06-04",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1671210/7ccda5b1631d2e60cc756a3271e845dbb9168821/header.jpg?t=1782314340",
+    "metacritic_score": null,
+    "hltb_main_hours": 27.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1671210"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/deltarune-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:12Z"
+  },
+  {
+    "id": "steam-2133760",
+    "name": "Tiny Bookshop",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-08-07",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2133760/519031e524f64d61ea58b75df39dccfe31b68834/header.jpg?t=1793427140",
+    "metacritic_score": 81,
+    "hltb_main_hours": 17.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2133760"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/tiny-bookshop-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:11Z"
+  },
+  {
+    "id": "steam-1145350",
+    "name": "Hades II",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-25",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145350/91ac334a2c137d08968ccc0bc474a02579602100/header.jpg?t=1779901265",
+    "metacritic_score": 94,
+    "hltb_main_hours": 32.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1145350"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hades-ii-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:09Z"
+  },
+  {
+    "id": "steam-434170",
+    "name": "The Jackbox Party Pack 3",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-10-17",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/434170/header.jpg?t=1728584278",
+    "metacritic_score": 81,
+    "hltb_main_hours": 3.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/434170"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-3-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:14Z"
+  },
+  {
+    "id": "steam-391540",
+    "name": "Undertale",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-09-15",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/391540/header.jpg?t=1757349115",
+    "metacritic_score": 92,
+    "hltb_main_hours": 7.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/391540"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/undertale-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:16Z"
+  },
+  {
+    "id": "steam-268910",
+    "name": "Cuphead",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-09-29",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/268910/header.jpg?t=1709068852",
+    "metacritic_score": 88,
+    "hltb_main_hours": 10.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/268910"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/cuphead-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:16Z"
+  },
+  {
+    "id": "steam-3170540",
+    "name": "Backyard Baseball '97",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-10-10",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3170540/header.jpg?t=1747961385",
+    "metacritic_score": null,
+    "hltb_main_hours": 13.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3170540"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/backyard-baseball-97-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:09Z"
+  },
+  {
+    "id": "steam-1401590",
+    "name": "Disney Dreamlight Valley",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-12-05",
     "reference_price": 39.99,
-    "image_url": "",
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1401590/7d9218ba90fd91c74138b323cde80dbb40f6f463/header_alt_assets_10.jpg?t=1793825700",
+    "metacritic_score": 70,
+    "hltb_main_hours": 65.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1401590"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/disney-dreamlight-valley-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:18Z"
+  },
+  {
+    "id": "steam-1211020",
+    "name": "Wobbly Life",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-18",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211020/86c3e16dfbfec027053c733d929a61ecfd15278a/header.jpg?t=1761037189",
+    "metacritic_score": null,
+    "hltb_main_hours": 14.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 16.24,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1211020"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/wobbly-life-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:17Z"
+  },
+  {
+    "id": "steam-319510",
+    "name": "Five Nights at Freddy's",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2014-08-19",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/319510/header.jpg?t=1666889251",
+    "metacritic_score": 78,
+    "hltb_main_hours": 2.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/319510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:18Z"
+  },
+  {
+    "id": "steam-1672970",
+    "name": "Minecraft Dungeons",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-09-22",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1672970/header.jpg?t=1787063807",
+    "metacritic_score": 70,
+    "hltb_main_hours": 5.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1672970"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/minecraft-dungeons-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:20Z"
+  },
+  {
+    "id": "steam-965680",
+    "name": "Boomerang Fu",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-08-13",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/965680/header.jpg?t=1793756726",
+    "metacritic_score": 78,
+    "hltb_main_hours": 0.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.49,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/965680"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.49,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/boomerang-fu-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:20Z"
+  },
+  {
+    "id": "steam-3035120",
+    "name": "Is This Seat Taken?",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-08-07",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3035120/header.jpg?t=1788003300",
+    "metacritic_score": 79,
+    "hltb_main_hours": 5.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 6.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3035120"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/is-this-seat-taken-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:21Z"
+  },
+  {
+    "id": "steam-4231820",
+    "name": "Castlevania: Belmont's Curse",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-10-14",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4231820/6b65aec2c398006aea8b76e1463cc34d0e4ba68b/header.jpg?t=1793067818",
+    "metacritic_score": 82,
+    "hltb_main_hours": 12.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/4231820"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/castlevania-belmonts-curse-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:22Z"
+  },
+  {
+    "id": "steam-2495100",
+    "name": "Hello Kitty Island Adventure",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-01-30",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2495100/33b3efa148506359eb8d6e973f59a38cb95cc794/header.jpg?t=1791583386",
+    "metacritic_score": 84,
+    "hltb_main_hours": 26.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2495100"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hello-kitty-island-adventure-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:23Z"
+  },
+  {
+    "id": "steam-1875580",
+    "name": "Mina the Hollower",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-05-28",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1875580/368fcff2cd8f5ef01c5a89060a49f9a333076a87/header.jpg?t=1793298887",
+    "metacritic_score": 90,
+    "hltb_main_hours": 18.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1875580"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/mina-the-hollower-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:23Z"
+  },
+  {
+    "id": "steam-1225570",
+    "name": "Unravel Two",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-06-04",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1225570/header.jpg?t=1777389655",
+    "metacritic_score": 76,
+    "hltb_main_hours": 5.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1225570"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/unravel-two-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:24Z"
+  },
+  {
+    "id": "steam-1177980",
+    "name": "Little Kitty, Big City",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-05-09",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1177980/c6f401a25f3c49c72adbb8936013648a51935c4b/header.jpg?t=1791501392",
+    "metacritic_score": 79,
+    "hltb_main_hours": 2.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1177980"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/little-kitty-big-city-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:25Z"
+  },
+  {
+    "id": "steam-1145360",
+    "name": "Hades",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-09-17",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1145360/header.jpg?t=1758127023",
+    "metacritic_score": 93,
+    "hltb_main_hours": 23.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1145360"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hades-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:26Z"
+  },
+  {
+    "id": "steam-1912410",
+    "name": "Minecraft Dungeons II",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-09-29",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1912410/86cbba83c1aaffa0b0efa4197ce29c2264ea9dc2/header.jpg?t=1791536987",
+    "metacritic_score": 69,
+    "hltb_main_hours": 8.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1912410"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/minecraft-dungeons-ii-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:26Z"
+  },
+  {
+    "id": "steam-3654560",
+    "name": "Plants vs. Zombies™: Replanted",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-23",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3654560/2a3015b525e5d4da6d2c1a517d0a8c1504b1eee8/header.jpg?t=1763401327",
+    "metacritic_score": 75,
+    "hltb_main_hours": 5.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3654560"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/plants-vs-zombies-replanted-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:27Z"
+  },
+  {
+    "id": "steam-1794680",
+    "name": "Vampire Survivors",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-10-20",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1794680/2ca07b690dde645771125ed9d9206c4c5fde4dd4/header.jpg?t=1787911678",
+    "metacritic_score": 86,
+    "hltb_main_hours": 16.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1794680"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/vampire-survivors-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:27Z"
+  },
+  {
+    "id": "steam-2644470",
+    "name": "PICO PARK 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-09-12",
+    "reference_price": 8.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2644470/header.jpg?t=1760143639",
+    "metacritic_score": null,
+    "hltb_main_hours": 5.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 8.99,
+        "regular_price": 8.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2644470"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 8.99,
+        "regular_price": 8.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pico-park-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:28Z"
+  },
+  {
+    "id": "steam-3364070",
+    "name": "The Jackbox Party Pack 11",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-22",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3364070/35c35317cc3f6ac5733896ab00c4cfbd5a1a025d/header.jpg?t=1774630140",
+    "metacritic_score": 79,
+    "hltb_main_hours": 2.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3364070"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-11-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:29Z"
+  },
+  {
+    "id": "steam-1509960",
+    "name": "PICO PARK",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-05-07",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1509960/header.jpg?t=1740033204",
+    "metacritic_score": null,
+    "hltb_main_hours": 3.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1509960"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pico-park-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:29Z"
+  },
+  {
+    "id": "steam-332800",
+    "name": "Five Nights at Freddy's 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2014-11-10",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/332800/header.jpg?t=1579635993",
+    "metacritic_score": 62,
+    "hltb_main_hours": 3.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/332800"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:30Z"
+  },
+  {
+    "id": "steam-386940",
+    "name": "Ultimate Chicken Horse",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-03-04",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/386940/header.jpg?t=1765298731",
+    "metacritic_score": 80,
+    "hltb_main_hours": 5.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/386940"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ultimate-chicken-horse-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:32Z"
+  },
+  {
+    "id": "steam-285900",
+    "name": "Gang Beasts",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-12-12",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/285900/header.jpg?t=1780410654",
+    "metacritic_score": 68,
+    "hltb_main_hours": 2.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/285900"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/gang-beasts-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:32Z"
+  },
+  {
+    "id": "steam-837470",
+    "name": "Untitled Goose Game",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-09-23",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/837470/header.jpg?t=1699052664",
+    "metacritic_score": 79,
+    "hltb_main_hours": 3.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/837470"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/untitled-goose-game-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:33Z"
+  },
+  {
+    "id": "steam-2446550",
+    "name": "STAR WARS™: Battlefront Classic Collection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-03-13",
+    "reference_price": 35.01,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2446550/header.jpg?t=1715189030",
+    "metacritic_score": 65,
+    "hltb_main_hours": 8.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 35.01,
+        "regular_price": 35.01,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2446550"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 35.01,
+        "regular_price": 35.01,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/star-wars-battlefront-classic-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:34Z"
+  },
+  {
+    "id": "steam-2209900",
+    "name": "Moonlight Peaks",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-07-06",
+    "reference_price": 34.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2209900/9a9b199531ec49be95ea2d34e67dfab47106584b/header.jpg?t=1790728927",
+    "metacritic_score": 75,
+    "hltb_main_hours": 66.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 34.99,
+        "regular_price": 34.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2209900"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 34.99,
+        "regular_price": 34.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/moonlight-peaks-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:34Z"
+  },
+  {
+    "id": "steam-1313140",
+    "name": "Cult of the Lamb",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-08-11",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1313140/19f32bb477a6e9d058e05193b4e282149bd70644/header.jpg?t=1786554901",
+    "metacritic_score": 82,
+    "hltb_main_hours": 14.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1313140"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/cult-of-the-lamb-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:35Z"
+  },
+  {
+    "id": "steam-381210",
+    "name": "Dead by Daylight",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-06-14",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/381210/header.jpg?t=1793724618",
+    "metacritic_score": 71,
+    "hltb_main_hours": 77.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/381210"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dead-by-daylight-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:36Z"
+  },
+  {
+    "id": "steam-1135690",
+    "name": "Unpacking",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-11-01",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1135690/header.jpg?t=1789426289",
+    "metacritic_score": 83,
+    "hltb_main_hours": 3.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1135690"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/unpacking-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:37Z"
+  },
+  {
+    "id": "steam-3405690",
+    "name": "EA SPORTS FC™ 26",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-25",
+    "reference_price": 69.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3405690/2d96aa1b06e453cd62dae9029d412f19e61932c3/header.jpg?t=1789751159",
+    "metacritic_score": 78,
+    "hltb_main_hours": 29.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 69.99,
+        "regular_price": 69.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3405690"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ea-sports-fc-26-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:37Z"
+  },
+  {
+    "id": "steam-2379780",
+    "name": "Balatro",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-02-20",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2379780/7a85430784e4d613cdb0547414d8cf16ffa45747/header.jpg?t=1790693638",
+    "metacritic_score": 90,
+    "hltb_main_hours": 7.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2379780"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/balatro-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:38Z"
+  },
+  {
+    "id": "steam-3931060",
+    "name": "MARVEL MaXimum Collection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-03-27",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3931060/c2fb712a568d5e5c13502fd4ccbace352b433916/header.jpg?t=1776110124",
+    "metacritic_score": 68,
+    "hltb_main_hours": 2.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3931060"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/marvel-maximum-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:39Z"
+  },
+  {
+    "id": "steam-747660",
+    "name": "Five Nights at Freddy's: Security Breach",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-12-16",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/747660/header.jpg?t=1686587905",
+    "metacritic_score": 64,
+    "hltb_main_hours": 10.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/747660"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-security-breach-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:40Z"
+  },
+  {
+    "id": "steam-105600",
+    "name": "Terraria",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2011-05-16",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/105600/header.jpg?t=1792530636",
+    "metacritic_score": 83,
+    "hltb_main_hours": 51.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/105600"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/terraria-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:40Z"
+  },
+  {
+    "id": "steam-674940",
+    "name": "Stick Fight: The Game",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-09-28",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/674940/header.jpg?t=1730715399",
+    "metacritic_score": null,
+    "hltb_main_hours": 1.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/674940"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 3.75,
+        "regular_price": 7.5,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/stick-fight-the-game-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:41Z"
+  },
+  {
+    "id": "steam-21690",
+    "name": "Resident Evil 5",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2009-09-15",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/21690/header.jpg?t=1768960574",
+    "metacritic_score": 86,
+    "hltb_main_hours": 12.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/21690"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-5-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:42Z"
+  },
+  {
+    "id": "steam-728880",
+    "name": "Overcooked! 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-08-07",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/728880/9305414f49b2f7aee7f7198dc507d6b66383fdd6/header.jpg?t=1789548883",
+    "metacritic_score": 81,
+    "hltb_main_hours": 7.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 8.49,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/728880"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 6.24,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/overcooked-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:44Z"
+  },
+  {
+    "id": "steam-2424420",
+    "name": "Avatar Legends: The Fighting Game",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-07-23",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2424420/30d44f94173fde20d7338f01611c6b5c7618e07e/header.jpg?t=1793830026",
+    "metacritic_score": 80,
+    "hltb_main_hours": 3.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2424420"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/avatar-legends-the-fighting-game-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:43Z"
+  },
+  {
+    "id": "steam-264710",
+    "name": "Subnautica",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-01-23",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/264710/header.jpg?t=1777456112",
+    "metacritic_score": 87,
+    "hltb_main_hours": 29.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/264710"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/subnautica-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:44Z"
+  },
+  {
+    "id": "steam-646570",
+    "name": "Slay the Spire",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-01-23",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/646570/header.jpg?t=1774015376",
+    "metacritic_score": 89,
+    "hltb_main_hours": 12.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/646570"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/slay-the-spire-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:46Z"
+  },
+  {
+    "id": "steam-221040",
+    "name": "Resident Evil 6",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2013-03-21",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/221040/header.jpg?t=1768960676",
+    "metacritic_score": 69,
+    "hltb_main_hours": 20.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/221040"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-6-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:46Z"
+  },
+  {
+    "id": "steam-1211630",
+    "name": "The Jackbox Party Pack 7",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-10-14",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1211630/header.jpg?t=1728584652",
+    "metacritic_score": 76,
+    "hltb_main_hours": 3.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1211630"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-7-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:48Z"
+  },
+  {
+    "id": "steam-2592160",
+    "name": "Dispatch",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-22",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2592160/header.jpg?t=1792683942",
+    "metacritic_score": 87,
+    "hltb_main_hours": 8.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2592160"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dispatch-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:47Z"
+  },
+  {
+    "id": "steam-346110",
+    "name": "ARK: Survival Evolved",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-08-27",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/346110/header.jpg?t=1793226330",
+    "metacritic_score": 70,
+    "hltb_main_hours": 67.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.89,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/346110"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ark-survival-evolved-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:50Z"
+  },
+  {
+    "id": "steam-3500390",
+    "name": "Mega Man Star Force Legacy Collection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-03-26",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3500390/81670785247923be3f05dad43452f84c6ec974ea/header.jpg?t=1788912796",
+    "metacritic_score": 77,
+    "hltb_main_hours": 41.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3500390"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/mega-man-star-force-legacy-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:50Z"
+  },
+  {
+    "id": "steam-1868140",
+    "name": "DAVE THE DIVER",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-06-28",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1868140/81bdb3bce15d27ca1b4554a642d91096e89be229/header.jpg?t=1791478061",
+    "metacritic_score": 90,
+    "hltb_main_hours": 25.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1868140"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dave-the-diver-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:52Z"
+  },
+  {
+    "id": "steam-1332010",
+    "name": "Stray",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-07-19",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1332010/71daca1910d664d31240b9623a495e0c0828807f/header.jpg?t=1785424330",
+    "metacritic_score": 82,
+    "hltb_main_hours": 5.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1332010"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/stray-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:52Z"
+  },
+  {
+    "id": "steam-2753970",
+    "name": "MARVEL Cosmic Invasion",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-12-01",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2753970/bf8e7717b8e9db8ef3bb4de5e4be947fa32cb50b/header_alt_assets_1.jpg?t=1791555582",
+    "metacritic_score": 81,
+    "hltb_main_hours": 3.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 22.49,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2753970"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 22.49,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/marvel-cosmic-invasion-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:54Z"
+  },
+  {
+    "id": "steam-1904480",
+    "name": "Absolum",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-09",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1904480/65f868078425ea29b87cb85075fcd1b3a8b71400/header.jpg?t=1790865610",
+    "metacritic_score": 87,
+    "hltb_main_hours": 9.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1904480"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/absolum-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:53Z"
+  },
+  {
+    "id": "steam-1969370",
+    "name": "LEGO® Party!",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-30",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1969370/bdd135d96ca368b1e1cb4f221052adcd0cfbff61/header.jpg?t=1783611891",
+    "metacritic_score": 77,
+    "hltb_main_hours": 3.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1969370"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 27.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/lego-party-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:54Z"
+  },
+  {
+    "id": "steam-1290000",
+    "name": "PowerWash Simulator",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-07-14",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1290000/header.jpg?t=1780392261",
+    "metacritic_score": 74,
+    "hltb_main_hours": 40.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1290000"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/powerwash-simulator-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:55Z"
+  },
+  {
+    "id": "steam-2017080",
+    "name": "Nickelodeon All-Star Brawl 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-11-07",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2017080/header.jpg?t=1746026398",
+    "metacritic_score": 73,
+    "hltb_main_hours": 4.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2017080"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/nickelodeon-all-star-brawl-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:56Z"
+  },
+  {
+    "id": "steam-570940",
+    "name": "DARK SOULS™: REMASTERED",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-05-23",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/570940/header.jpg?t=1778518110",
+    "metacritic_score": 84,
+    "hltb_main_hours": 29.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/570940"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dark-souls-remastered-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:57Z"
+  },
+  {
+    "id": "steam-2668510",
+    "name": "Red Dead Redemption",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-10-29",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2668510/header.jpg?t=1781132266",
+    "metacritic_score": null,
+    "hltb_main_hours": 17.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2668510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/red-dead-redemption-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:09:58Z"
+  },
+  {
+    "id": "steam-388090",
+    "name": "Five Nights at Freddy's 4",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-07-23",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/388090/header.jpg?t=1579635988",
+    "metacritic_score": 51,
+    "hltb_main_hours": 2.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/388090"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-4-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:00Z"
+  },
+  {
+    "id": "steam-962130",
+    "name": "Grounded",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-09-27",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/962130/header.jpg?t=1768264530",
+    "metacritic_score": 83,
+    "hltb_main_hours": 33.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/962130"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/grounded-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:00Z"
+  },
+  {
+    "id": "steam-1062520",
+    "name": "Dinkum",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-04-22",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1062520/04b22b3889c6d2c903745595c3acd29842473399/header.jpg?t=1767607973",
+    "metacritic_score": null,
+    "hltb_main_hours": 31.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1062520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dinkum-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:01Z"
+  },
+  {
+    "id": "steam-3472040",
+    "name": "NBA 2K26",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-04",
+    "reference_price": 69.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3472040/f7e126add75c3b09779b44cd349be93d31b0a80b/header.jpg?t=1786115051",
+    "metacritic_score": 83,
+    "hltb_main_hours": 42.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 69.99,
+        "regular_price": 69.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3472040"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/nba-2k26-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:03Z"
+  },
+  {
+    "id": "steam-32370",
+    "name": "STAR WARS™ Knights of the Old Republic™",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2009-09-05",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/32370/header.jpg?t=1681144833",
+    "metacritic_score": 93,
+    "hltb_main_hours": 28.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/32370"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/star-wars-knights-of-the-old-republic-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:05Z"
+  },
+  {
+    "id": "steam-1896700",
+    "name": "Wylde Flowers",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-09-20",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1896700/241af42c2fcaaa5f08327acd1cd079aee359f5ca/header.jpg?t=1765310909",
+    "metacritic_score": 82,
+    "hltb_main_hours": 55.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1896700"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/wylde-flowers-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:04Z"
+  },
+  {
+    "id": "steam-304240",
+    "name": "Resident Evil",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-01-19",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/304240/header.jpg?t=1790560874",
+    "metacritic_score": 82,
+    "hltb_main_hours": 6.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/304240"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:11Z"
+  },
+  {
+    "id": "steam-3008740",
+    "name": "Winter Burrow",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-11-12",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3008740/087d5aacaa07d370106b26d4e42cb6798c10a818/header.jpg?t=1793619678",
+    "metacritic_score": 68,
+    "hltb_main_hours": 7.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 10.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3008740"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/winter-burrow-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:07Z"
+  },
+  {
+    "id": "steam-2274620",
+    "name": "Discounty",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-08-21",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2274620/3d9db2e0d82e171901fd0242273193de8708967c/header.jpg?t=1792146233",
+    "metacritic_score": 79,
+    "hltb_main_hours": 18.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2274620"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/discounty-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:08Z"
+  },
+  {
+    "id": "steam-2215390",
+    "name": "Five Nights at Freddy's: Secret of the Mimic",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-06-13",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2215390/527bbebaa5764de58528487b3f2142c44a58b267/header.jpg?t=1779297670",
+    "metacritic_score": null,
+    "hltb_main_hours": 6.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2215390"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-secret-of-the-mimic-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:11Z"
+  },
+  {
+    "id": "steam-470220",
+    "name": "UNO",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-01-03",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/470220/b8741c3f32ce4560f33d6a7af256ec8c9828f285/header.jpg?t=1791965305",
+    "metacritic_score": null,
+    "hltb_main_hours": 4.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/470220"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/uno-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:13Z"
+  },
+  {
+    "id": "steam-2050650",
+    "name": "Resident Evil 4",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-03-23",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2050650/header.jpg?t=1772502922",
+    "metacritic_score": 91,
+    "hltb_main_hours": 16.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2050650"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/resident-evil-4-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:13Z"
+  },
+  {
+    "id": "steam-2788520",
+    "name": "Cozy Caravan",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-01-07",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2788520/ca675edc5114be56c5737dce46211a786a5cc68c/header.jpg?t=1767858782",
+    "metacritic_score": 79,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2788520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/cozy-caravan-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:14Z"
+  },
+  {
+    "id": "steam-506610",
+    "name": "Five Nights at Freddy's: Sister Location",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-10-07",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/506610/header.jpg?t=1579635985",
+    "metacritic_score": 62,
+    "hltb_main_hours": 3.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/506610"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-sister-location-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:15Z"
+  },
+  {
+    "id": "steam-1150690",
+    "name": "OMORI",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-12-25",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1150690/header.jpg?t=1671584768",
+    "metacritic_score": 88,
+    "hltb_main_hours": 21.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1150690"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/omori-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:15Z"
+  },
+  {
+    "id": "steam-4080220",
+    "name": "EA SPORTS FC™ 27",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-09-24",
+    "reference_price": 69.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4080220/ff6a3779f1ca83aae8ad3878454f6c11008ea24d/header.jpg?t=1793610006",
+    "metacritic_score": 76,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 69.99,
+        "regular_price": 69.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/4080220"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ea-sports-fc-27-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:16Z"
+  },
+  {
+    "id": "steam-3837340",
+    "name": "FINAL FANTASY VII",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2013-07-24",
+    "reference_price": 11.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3837340/467568ecc51ea77191ce048636a6f211c1c93a9f/header.jpg?t=1775108423",
+    "metacritic_score": 81,
+    "hltb_main_hours": 36.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 11.99,
+        "regular_price": 11.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3837340"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 6.39,
+        "regular_price": 15.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-vii-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:17Z"
+  },
+  {
+    "id": "steam-3265700",
+    "name": "Vampire Crawlers: The Turbo Wildcard from Vampire Survivors",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-04-21",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3265700/5590e42cab09dacabee973dd2c3e27ef12ed4950/header.jpg?t=1776925935",
+    "metacritic_score": 82,
+    "hltb_main_hours": 17.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3265700"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/vampire-crawlers-the-turbo-wildcard-from-vampire-survivors-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:19Z"
+  },
+  {
+    "id": "steam-1454400",
+    "name": "Cookie Clicker",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-09-01",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1454400/header.jpg?t=1793915203",
+    "metacritic_score": null,
+    "hltb_main_hours": 145.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1454400"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/cookie-clicker-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:19Z"
+  },
+  {
+    "id": "steam-2062430",
+    "name": "BALL x PIT",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-15",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2062430/a157aa8de4bd9070194ddffb27c31636355dca05/header.jpg?t=1790869056",
+    "metacritic_score": 84,
+    "hltb_main_hours": 19.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2062430"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ball-x-pit-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:21Z"
+  },
+  {
+    "id": "steam-2231450",
+    "name": "Pizza Tower",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-01-26",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2231450/header.jpg?t=1732516978",
+    "metacritic_score": 89,
+    "hltb_main_hours": 6.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2231450"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pizza-tower-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:20Z"
+  },
+  {
+    "id": "steam-322330",
+    "name": "Don't Starve Together",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-04-21",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/322330/050ea9c51a4e96f707309d33b7cdd38e0a6cbfff/header_alt_assets_51.jpg?t=1793044716",
+    "metacritic_score": 83,
+    "hltb_main_hours": 34.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/322330"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dont-starve-together-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:22Z"
+  },
+  {
+    "id": "steam-228380",
+    "name": "Wreckfest",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-06-14",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/228380/header.jpg?t=1742490584",
+    "metacritic_score": 81,
+    "hltb_main_hours": 17.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/228380"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/wreckfest-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:22Z"
+  },
+  {
+    "id": "steam-1599600",
+    "name": "PlateUp!",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-08-04",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1599600/ca2449fda2ccb4e2bb81a3f027f76b6fba04b7fb/header_alt_assets_19.jpg?t=1793721161",
+    "metacritic_score": null,
+    "hltb_main_hours": 14.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1599600"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/plateup-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:24Z"
+  },
+  {
+    "id": "steam-1113000",
+    "name": "Persona 4 Golden",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-06-13",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1113000/header.jpg?t=1763530422",
+    "metacritic_score": 87,
+    "hltb_main_hours": 67.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1113000"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/persona-4-golden-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:24Z"
+  },
+  {
+    "id": "steam-1942280",
+    "name": "Brotato",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-06-23",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1942280/bf970261a3a42f346624ae9c48b5b317fc724857/header_alt_assets_4.jpg?t=1793641955",
+    "metacritic_score": 76,
+    "hltb_main_hours": 5.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 2.49,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1942280"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/brotato-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:24Z"
+  },
+  {
+    "id": "steam-1388880",
+    "name": "Doki Doki Literature Club Plus!",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-06-30",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1388880/2918402fa9090ab9ab944af2469d47d670007387/header.jpg?t=1769459840",
+    "metacritic_score": 81,
+    "hltb_main_hours": 4.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1388880"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/doki-doki-literature-club-plus-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:26Z"
+  },
+  {
+    "id": "steam-1328660",
+    "name": "Need for Speed™ Hot Pursuit Remastered",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-11-06",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1328660/header.jpg?t=1779987591",
+    "metacritic_score": 74,
+    "hltb_main_hours": 16.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1328660"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/need-for-speed-hot-pursuit-remastered-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:26Z"
+  },
+  {
+    "id": "steam-508440",
+    "name": "Totally Accurate Battle Simulator",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-04-01",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/508440/header.jpg?t=1730715415",
+    "metacritic_score": null,
+    "hltb_main_hours": 8.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/508440"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/totally-accurate-battle-simulator-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:27Z"
+  },
+  {
+    "id": "steam-2751000",
+    "name": "Prince of Persia The Lost Crown",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-08-08",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2751000/header.jpg?t=1777993930",
+    "metacritic_score": 85,
+    "hltb_main_hours": 16.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2751000"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/prince-of-persia-the-lost-crown-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:27Z"
+  },
+  {
+    "id": "steam-354140",
+    "name": "Five Nights at Freddy's 3",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-03-02",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/354140/header.jpg?t=1579635991",
+    "metacritic_score": 68,
+    "hltb_main_hours": 2.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/354140"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-3-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:29Z"
+  },
+  {
+    "id": "steam-1243830",
+    "name": "Overcooked! All You Can Eat",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-03-23",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1243830/header.jpg?t=1788969190",
+    "metacritic_score": 87,
+    "hltb_main_hours": 11.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1243830"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/overcooked-all-you-can-eat-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:30Z"
+  },
+  {
+    "id": "steam-4127530",
+    "name": "Bluey's Quest For The Gold Pen",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-05-28",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4127530/e0643a54b266d8ce085a4b87dada71906bb395b5/header.jpg?t=1779980703",
+    "metacritic_score": 85,
+    "hltb_main_hours": 3.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/4127530"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/blueys-quest-for-the-gold-pen-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:30Z"
+  },
+  {
+    "id": "steam-1055540",
+    "name": "A Short Hike",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-07-30",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1055540/header.jpg?t=1777758958",
+    "metacritic_score": 82,
+    "hltb_main_hours": 1.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1055540"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/a-short-hike-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:31Z"
+  },
+  {
+    "id": "steam-1809540",
+    "name": "Nine Sols",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-05-28",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1809540/header.jpg?t=1782464830",
+    "metacritic_score": 84,
+    "hltb_main_hours": 21.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1809540"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/nine-sols-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:31Z"
+  },
+  {
+    "id": "steam-731490",
+    "name": "Crash Bandicoot™ N. Sane Trilogy",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-06-29",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/731490/header.jpg?t=1742399696",
+    "metacritic_score": 76,
+    "hltb_main_hours": 15.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/731490"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/crash-bandicoot-n-sane-trilogy-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:35Z"
+  },
+  {
+    "id": "steam-351510",
+    "name": "Quiplash",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-06-30",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/351510/header.jpg?t=1725046271",
+    "metacritic_score": null,
+    "hltb_main_hours": 0.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/351510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/quiplash-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:35Z"
+  },
+  {
+    "id": "steam-996580",
+    "name": "Spyro™ Reignited Trilogy",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-09-03",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/996580/header.jpg?t=1781038162",
+    "metacritic_score": 75,
+    "hltb_main_hours": 17.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/996580"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/spyro-reignited-trilogy-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:36Z"
+  },
+  {
+    "id": "steam-736260",
+    "name": "Baba Is You",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-03-13",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/736260/header.jpg?t=1760102539",
+    "metacritic_score": 87,
+    "hltb_main_hours": 7.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/736260"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 15.0,
+        "regular_price": 15.0,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/baba-is-you-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:37Z"
+  },
+  {
+    "id": "steam-1790600",
+    "name": "DRAGON BALL: Sparking! ZERO",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-10-10",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1790600/header.jpg?t=1785726916",
+    "metacritic_score": 83,
+    "hltb_main_hours": 10.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1790600"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dragon-ball-sparking-zero-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:39Z"
+  },
+  {
+    "id": "steam-911400",
+    "name": "Assassin's Creed® III Remastered",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-03-29",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/911400/header.jpg?t=1786631735",
+    "metacritic_score": 75,
+    "hltb_main_hours": 14.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/911400"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/assassins-creed-iii-remastered-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:39Z"
+  },
+  {
+    "id": "steam-252110",
+    "name": "Lovers in a Dangerous Spacetime",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-09-09",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/252110/header.jpg?t=1745967822",
+    "metacritic_score": 80,
+    "hltb_main_hours": 5.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/252110"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/lovers-in-a-dangerous-spacetime-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:41Z"
+  },
+  {
+    "id": "steam-3897800",
+    "name": "Poker Night at the Inventory",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-03-05",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3897800/07bb60dab716568fdc7c8643b2bc8303d9d11d16/header.jpg?t=1774119583",
+    "metacritic_score": 77,
+    "hltb_main_hours": 3.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3897800"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/poker-night-at-the-inventory-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:41Z"
+  },
+  {
+    "id": "steam-1629520",
+    "name": "A Little to the Left",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-11-08",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1629520/header.jpg?t=1791454263",
+    "metacritic_score": 75,
+    "hltb_main_hours": 3.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 5.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1629520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/a-little-to-the-left-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:41Z"
+  },
+  {
+    "id": "steam-213670",
+    "name": "South Park™: The Stick of Truth™",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2014-03-03",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/213670/header.jpg?t=1777994062",
+    "metacritic_score": 85,
+    "hltb_main_hours": 11.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/213670"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/south-park-the-stick-of-truth-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:42Z"
+  },
+  {
+    "id": "steam-2881650",
+    "name": "Content Warning",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-04-01",
+    "reference_price": 7.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2881650/header.jpg?t=1785137321",
+    "metacritic_score": null,
+    "hltb_main_hours": 7.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 7.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2881650"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/content-warning-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:43Z"
+  },
+  {
+    "id": "steam-584400",
+    "name": "Sonic Mania",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-08-29",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/584400/header.jpg?t=1785856230",
+    "metacritic_score": 84,
+    "hltb_main_hours": 5.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/584400"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/sonic-mania-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:44Z"
+  },
+  {
+    "id": "steam-1594940",
+    "name": "Little Witch in the Woods",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-14",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1594940/cdaec3842335106c3d5dfe91997e2465b239f2f4/header.jpg?t=1789450035",
+    "metacritic_score": null,
+    "hltb_main_hours": 8.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1594940"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/little-witch-in-the-woods-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:44Z"
+  },
+  {
+    "id": "steam-1687950",
+    "name": "Persona 5 Royal",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-10-20",
+    "reference_price": 59.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1687950/header.jpg?t=1783356822",
+    "metacritic_score": 95,
+    "hltb_main_hours": 101.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1687950"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/persona-5-royal-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:45Z"
+  },
+  {
+    "id": "steam-850190",
+    "name": "Goat Simulator 3",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-02-15",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/850190/0c1821676adac70274601698216078eb5d8961b0/header_alt_assets_8.jpg?t=1793791274",
+    "metacritic_score": 71,
+    "hltb_main_hours": 7.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/850190"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/goat-simulator-3-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:46Z"
+  },
+  {
+    "id": "steam-578330",
+    "name": "LEGO® City Undercover",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-04-04",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/578330/header.jpg?t=1780600124",
+    "metacritic_score": 80,
+    "hltb_main_hours": 15.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/578330"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/lego-city-undercover-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:46Z"
+  },
+  {
+    "id": "steam-1005300",
+    "name": "The Jackbox Party Pack 6",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-10-16",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1005300/header.jpg?t=1728584590",
+    "metacritic_score": 80,
+    "hltb_main_hours": 5.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1005300"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-6-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:50Z"
+  },
+  {
+    "id": "steam-1755580",
+    "name": "The Jackbox Party Starter",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-06-29",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1755580/header.jpg?t=1734653341",
+    "metacritic_score": null,
+    "hltb_main_hours": 1.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1755580"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-starter-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:47Z"
+  },
+  {
+    "id": "steam-387290",
+    "name": "Ori and the Blind Forest: Definitive Edition",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-04-27",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/387290/header.jpg?t=1701967651",
+    "metacritic_score": 88,
+    "hltb_main_hours": 9.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/387290"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ori-and-the-blind-forest-definitive-edition-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:48Z"
+  },
+  {
+    "id": "steam-2486820",
+    "name": "Sonic Racing: CrossWorlds",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-25",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2486820/ee9b8f88d7d971723c3a08ebe87869797102e31e/header_alt_assets_17.jpg?t=1793753139",
+    "metacritic_score": 84,
+    "hltb_main_hours": 4.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2486820"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/sonic-racing-crossworlds-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:50Z"
+  },
+  {
+    "id": "steam-1392860",
+    "name": "Little Nightmares III",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-09",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1392860/7aba96b32736990ec8a131bfdf395d2dc35b282b/header.jpg?t=1790849221",
+    "metacritic_score": 69,
+    "hltb_main_hours": 6.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1392860"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/little-nightmares-iii-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:51Z"
+  },
+  {
+    "id": "steam-312530",
+    "name": "Duck Game",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2015-06-04",
+    "reference_price": 12.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/312530/header.jpg?t=1719772984",
+    "metacritic_score": 82,
+    "hltb_main_hours": 3.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 12.99,
+        "regular_price": 12.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/312530"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 12.99,
+        "regular_price": 12.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/duck-game-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:52Z"
+  },
+  {
+    "id": "steam-4094670",
+    "name": "Rayman: 30th Anniversary Edition",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-02-13",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/4094670/e8a9b8ebdc48c9efc79458627c7880093957ae93/header.jpg?t=1790072824",
+    "metacritic_score": 64,
+    "hltb_main_hours": 5.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/4094670"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/rayman-30th-anniversary-edition-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:53Z"
+  },
+  {
+    "id": "steam-2552430",
+    "name": "KINGDOM HEARTS -HD 1.5+2.5 ReMIX-",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-06-13",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2552430/header.jpg?t=1791479393",
+    "metacritic_score": null,
+    "hltb_main_hours": 112.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2552430"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/kingdom-hearts-hd-1-5-plus-2-5-remix-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:52Z"
+  },
+  {
+    "id": "steam-208580",
+    "name": "STAR WARS™ Knights of the Old Republic™ II - The Sith Lords™",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2012-08-23",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/208580/header.jpg?t=1699053053",
+    "metacritic_score": 85,
+    "hltb_main_hours": 30.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/208580"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/star-wars-knights-of-the-old-republic-ii-the-sith-lords-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:54Z"
+  },
+  {
+    "id": "steam-1361510",
+    "name": "Teenage Mutant Ninja Turtles: Shredder's Revenge",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-06-16",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1361510/header.jpg?t=1782982752",
+    "metacritic_score": 84,
+    "hltb_main_hours": 2.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1361510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/teenage-mutant-ninja-turtles-shredders-revenge-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:55Z"
+  },
+  {
+    "id": "steam-990080",
+    "name": "Hogwarts Legacy",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-02-10",
+    "reference_price": 59.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/990080/be2971b1023bccb04f993887d70ef4d2060262cf/header.jpg?t=1790708992",
+    "metacritic_score": 83,
+    "hltb_main_hours": 26.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/990080"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hogwarts-legacy-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:56Z"
+  },
+  {
+    "id": "steam-1173820",
+    "name": "FINAL FANTASY VI",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-02-23",
+    "reference_price": 17.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1173820/header.jpg?t=1773825867",
+    "metacritic_score": null,
+    "hltb_main_hours": 33.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 17.99,
+        "regular_price": 17.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1173820"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 10.79,
+        "regular_price": 17.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-vi-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:57Z"
+  },
+  {
+    "id": "steam-1718460",
+    "name": "Terminator 2D: NO FATE",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-12-12",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1718460/header.jpg?t=1782137385",
+    "metacritic_score": 72,
+    "hltb_main_hours": 1.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1718460"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/terminator-2d-no-fate-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:58Z"
+  },
+  {
+    "id": "steam-383870",
+    "name": "Firewatch",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-02-09",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/383870/41a7d0ff4c2dab4ed69c53c9a29c931e6f62948d/header.jpg?t=1755789801",
+    "metacritic_score": 81,
+    "hltb_main_hours": 4.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/383870"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/firewatch-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:10:58Z"
+  },
+  {
+    "id": "steam-2508780",
+    "name": "STORY OF SEASONS: Grand Bazaar",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-08-27",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2508780/677824c9ff62d7a20678ff5583592c1d89de1b57/header.jpg?t=1780524524",
+    "metacritic_score": 81,
+    "hltb_main_hours": 57.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2508780"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/story-of-seasons-grand-bazaar-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:00Z"
+  },
+  {
+    "id": "steam-1147860",
+    "name": "UFO 50",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-09-18",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1147860/header.jpg?t=1776264051",
+    "metacritic_score": 91,
+    "hltb_main_hours": 55.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1147860"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ufo-50-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:00Z"
+  },
+  {
+    "id": "steam-333640",
+    "name": "Caves of Qud",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-12-05",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/333640/header.jpg?t=1790186617",
+    "metacritic_score": 91,
+    "hltb_main_hours": 58.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/333640"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/caves-of-qud-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:02Z"
+  },
+  {
+    "id": "steam-1455630",
+    "name": "THE GAME OF LIFE 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-12-11",
+    "reference_price": 12.49,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1455630/7e459241dc9cdd601baa81e8d576bc563cd5765b/header.jpg?t=1792664506",
+    "metacritic_score": 53,
+    "hltb_main_hours": 1.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 12.49,
+        "regular_price": 12.49,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1455630"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-game-of-life-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:02Z"
+  },
+  {
+    "id": "steam-683900",
+    "name": "RollerCoaster Tycoon® Classic",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-09-28",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/683900/header.jpg?t=1773076729",
+    "metacritic_score": 81,
+    "hltb_main_hours": 12.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/683900"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/rollercoaster-tycoon-classic-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:03Z"
+  },
+  {
+    "id": "steam-1880620",
+    "name": "Once Upon A KATAMARI",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-23",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1880620/3130e431c760a34165ee6f40e1896e54fbb1eccb/header.jpg?t=1791527923",
+    "metacritic_score": 83,
+    "hltb_main_hours": 7.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1880620"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/once-upon-a-katamari-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:03Z"
+  },
+  {
+    "id": "steam-477160",
+    "name": "Human Fall Flat",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-07-22",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/477160/9258286b309480a3ce438c07cb51fadf3ea2f1d1/header_alt_assets_27.jpg?t=1793018738",
+    "metacritic_score": 70,
+    "hltb_main_hours": 6.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 5.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/477160"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/human-fall-flat-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:05Z"
+  },
+  {
+    "id": "steam-2678990",
+    "name": "Minami Lane",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-02-28",
+    "reference_price": 4.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2678990/header.jpg?t=1792734225",
+    "metacritic_score": 78,
+    "hltb_main_hours": 2.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 4.99,
+        "regular_price": 4.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2678990"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 5.99,
+        "regular_price": 5.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/minami-lane-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:04Z"
+  },
+  {
+    "id": "steam-3483740",
+    "name": "Cast n Chill",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-06-16",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3483740/b3861b297ccb9284cd066c91f57b8b97b8e9fa91/header.jpg?t=1793747817",
+    "metacritic_score": null,
+    "hltb_main_hours": 17.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3483740"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/cast-n-chill-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:06Z"
+  },
+  {
+    "id": "steam-960090",
+    "name": "Bloons TD 6",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-12-17",
+    "reference_price": 13.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/960090/header.jpg?t=1782123772",
+    "metacritic_score": null,
+    "hltb_main_hours": 37.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 13.99,
+        "regular_price": 13.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/960090"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/bloons-td-6-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:07Z"
+  },
+  {
+    "id": "steam-613100",
+    "name": "House Flipper",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-05-17",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/613100/6cee40fe293f0bab47534e78bcda64487902efc1/header.jpg?t=1790844381",
+    "metacritic_score": 67,
+    "hltb_main_hours": 13.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/613100"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/house-flipper-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:07Z"
+  },
+  {
+    "id": "steam-753640",
+    "name": "Outer Wilds",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-06-18",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/753640/079ae4a7ff4b5875adc5c63c4c0b84e5a3e6966b/header.jpg?t=1785424341",
+    "metacritic_score": 85,
+    "hltb_main_hours": 17.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/753640"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/outer-wilds-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:09Z"
+  },
+  {
+    "id": "steam-481510",
+    "name": "Night in the Woods",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-02-21",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/481510/header.jpg?t=1783360222",
+    "metacritic_score": 88,
+    "hltb_main_hours": 9.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/481510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/night-in-the-woods-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:09Z"
+  },
+  {
+    "id": "steam-1621690",
+    "name": "Core Keeper",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-08-27",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1621690/header.jpg?t=1791454740",
+    "metacritic_score": 86,
+    "hltb_main_hours": 38.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1621690"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/core-keeper-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:10Z"
+  },
+  {
+    "id": "steam-905340",
+    "name": "Heave Ho",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-08-29",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/905340/header.jpg?t=1784605800",
+    "metacritic_score": 76,
+    "hltb_main_hours": 3.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/905340"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/heave-ho-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:10Z"
+  },
+  {
+    "id": "steam-2638370",
+    "name": "Five Nights at Freddy's: Into the Pit",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-08-07",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2638370/header.jpg?t=1746172589",
+    "metacritic_score": 87,
+    "hltb_main_hours": 4.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2638370"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/five-nights-at-freddys-into-the-pit-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:11Z"
+  },
+  {
+    "id": "steam-1574580",
+    "name": "Strange Horticulture",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-01-21",
+    "reference_price": 15.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1574580/header.jpg?t=1772459223",
+    "metacritic_score": 83,
+    "hltb_main_hours": 5.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 15.99,
+        "regular_price": 15.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1574580"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 6.39,
+        "regular_price": 15.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/strange-horticulture-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:13Z"
+  },
+  {
+    "id": "steam-1432860",
+    "name": "Sun Haven",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-03-10",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1432860/header.jpg?t=1741982676",
+    "metacritic_score": null,
+    "hltb_main_hours": 43.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1432860"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/sun-haven-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:13Z"
+  },
+  {
+    "id": "steam-1557740",
+    "name": "ROUNDS",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-04-01",
+    "reference_price": 5.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1557740/header.jpg?t=1759328419",
+    "metacritic_score": null,
+    "hltb_main_hours": 1.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 5.99,
+        "regular_price": 5.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1557740"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 5.94,
+        "regular_price": 8.49,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/rounds-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:14Z"
+  },
+  {
+    "id": "steam-2230110",
+    "name": "Fae Farm",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-09-08",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2230110/header.jpg?t=1777982329",
+    "metacritic_score": 75,
+    "hltb_main_hours": 31.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2230110"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 44.99,
+        "regular_price": 44.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/fae-farm-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:14Z"
+  },
+  {
+    "id": "steam-3014320",
+    "name": "OCTOPATH TRAVELER 0",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-12-04",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3014320/64e57769c968124451e35898eae64217f99bd9c4/header.jpg?t=1793265949",
+    "metacritic_score": 80,
+    "hltb_main_hours": 67.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3014320"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/octopath-traveler-0-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:15Z"
+  },
+  {
+    "id": "steam-1277400",
+    "name": "Monster Hunter Stories 2: Wings of Ruin",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-07-08",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1277400/header.jpg?t=1768870791",
+    "metacritic_score": 82,
+    "hltb_main_hours": 41.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1277400"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/monster-hunter-stories-2-wings-of-ruin-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:16Z"
+  },
+  {
+    "id": "steam-504230",
+    "name": "Celeste",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-01-25",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/504230/header.jpg?t=1714089525",
+    "metacritic_score": 88,
+    "hltb_main_hours": 8.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/504230"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/celeste-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:16Z"
+  },
+  {
+    "id": "steam-1457570",
+    "name": "Taxi Chaos",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-10-19",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1457570/header.jpg?t=1739866051",
+    "metacritic_score": 51,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1457570"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 34.95,
+        "regular_price": 34.95,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/taxi-chaos-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:17Z"
+  },
+  {
+    "id": "steam-2885870",
+    "name": "Strange Antiquities",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-17",
+    "reference_price": 17.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2885870/7ae4a67e90472e7324a7c32ad2ac1dad14bea103/header.jpg?t=1778730364",
+    "metacritic_score": 81,
+    "hltb_main_hours": 8.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 17.99,
+        "regular_price": 17.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2885870"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 11.69,
+        "regular_price": 17.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/strange-antiquities-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:18Z"
+  },
+  {
+    "id": "steam-572890",
+    "name": "Pikuniku",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-01-24",
+    "reference_price": 12.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/572890/header.jpg?t=1781274905",
+    "metacritic_score": 74,
+    "hltb_main_hours": 3.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 12.99,
+        "regular_price": 12.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/572890"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 1.99,
+        "regular_price": 12.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pikuniku-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:18Z"
+  },
+  {
+    "id": "steam-553420",
+    "name": "TUNIC",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-03-16",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/553420/header.jpg?t=1783359656",
+    "metacritic_score": 85,
+    "hltb_main_hours": 12.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/553420"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/tunic-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:19Z"
+  },
+  {
+    "id": "steam-1092790",
+    "name": "Inscryption",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-10-19",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1092790/header.jpg?t=1777572925",
+    "metacritic_score": 85,
+    "hltb_main_hours": 12.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 7.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1092790"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/inscryption-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:19Z"
+  },
+  {
+    "id": "steam-610180",
+    "name": "The Jackbox Party Pack 4",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2017-10-18",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/610180/header.jpg?t=1728584458",
+    "metacritic_score": 77,
+    "hltb_main_hours": 3.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/610180"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-4-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:20Z"
+  },
+  {
+    "id": "steam-3960600",
+    "name": "Warrior Cats: Clans of the Forest",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-10-23",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3960600/9f44f5e72861ea37f25bb51d4c69fa03b880961b/header.jpg?t=1793359232",
+    "metacritic_score": 78,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3960600"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/warrior-cats-clans-of-the-forest-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:21Z"
+  },
+  {
+    "id": "steam-1522160",
+    "name": "Disney Epic Mickey: Rebrushed",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-09-24",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1522160/header.jpg?t=1732714651",
+    "metacritic_score": 75,
+    "hltb_main_hours": 10.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1522160"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/disney-epic-mickey-rebrushed-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:22Z"
+  },
+  {
+    "id": "steam-2418520",
+    "name": "Farm Together 2",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-05-30",
+    "reference_price": 25.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2418520/2d3d3334350852e452327ee9feb81249f0e8bba6/header.jpg?t=1791989104",
+    "metacritic_score": null,
+    "hltb_main_hours": 3.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 25.99,
+        "regular_price": 25.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2418520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 25.99,
+        "regular_price": 25.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/farm-together-2-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:23Z"
+  },
+  {
+    "id": "steam-1552350",
+    "name": "The Jackbox Party Pack 8",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-10-13",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1552350/header.jpg?t=1728584688",
+    "metacritic_score": 75,
+    "hltb_main_hours": 3.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1552350"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-8-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:23Z"
+  },
+  {
+    "id": "steam-3219190",
+    "name": "Axis Football 2026",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-08",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3219190/header.jpg?t=1757334381",
     "metacritic_score": null,
     "hltb_main_hours": null,
-    "offers": [],
-    "updated_at": null
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3219190"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/axis-football-2026-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:24Z"
+  },
+  {
+    "id": "steam-3259780",
+    "name": "FINAL FANTASY RESONANCE",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-10-22",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3259780/710da43babb2043f9f6ad0e50023e31167d94708/header.jpg?t=1793984485",
+    "metacritic_score": 80,
+    "hltb_main_hours": 39.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3259780"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-resonance-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:25Z"
+  },
+  {
+    "id": "steam-2843190",
+    "name": "Camper Van: Make it Home",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-06-07",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2843190/db3b0712cd272ed658b401c1df8df11be68261e5/header.jpg?t=1788352377",
+    "metacritic_score": null,
+    "hltb_main_hours": 4.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2843190"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/camper-van-make-it-home-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:25Z"
+  },
+  {
+    "id": "steam-1984270",
+    "name": "Digimon Story Time Stranger",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-02",
+    "reference_price": 99.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1984270/723bccb3bf302c7c065201b578fbc7030b4e3c41/header.jpg?t=1790325181",
+    "metacritic_score": 80,
+    "hltb_main_hours": 41.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 59.99,
+        "regular_price": 99.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1984270"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 41.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/digimon-story-time-stranger-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:26Z"
+  },
+  {
+    "id": "steam-1703340",
+    "name": "The Stanley Parable: Ultra Deluxe",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-04-27",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1703340/header.jpg?t=1712065263",
+    "metacritic_score": 90,
+    "hltb_main_hours": 2.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1703340"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-stanley-parable-ultra-deluxe-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:27Z"
+  },
+  {
+    "id": "steam-3756010",
+    "name": "SUPER BOMBERMAN COLLECTION",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-02-05",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3756010/cdb5d4d45a27797897f6052d55bc7316ea9a3e4c/header.jpg?t=1787205601",
+    "metacritic_score": 85,
+    "hltb_main_hours": 5.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3756010"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/super-bomberman-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:28Z"
+  },
+  {
+    "id": "steam-275850",
+    "name": "No Man's Sky",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-08-12",
+    "reference_price": 59.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/275850/9f1ca9e3b7d1dccb7b5af404a6739ddc1118ef32/header_alt_assets_26.jpg?t=1793196605",
+    "metacritic_score": 61,
+    "hltb_main_hours": 32.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 23.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/275850"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 23.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/no-mans-sky-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:29Z"
+  },
+  {
+    "id": "steam-3454980",
+    "name": "Mortal Kombat: Legacy Kollection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-10-29",
+    "reference_price": 49.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3454980/24fece3b770962ade1a94dfb3f134befe97469b9/header.jpg?t=1782336113",
+    "metacritic_score": 78,
+    "hltb_main_hours": 7.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3454980"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 49.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/mortal-kombat-legacy-kollection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:30Z"
+  },
+  {
+    "id": "steam-2499860",
+    "name": "DRAGON QUEST VII Reimagined",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-02-05",
+    "reference_price": 59.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2499860/ea0c655407c078a8994b7e91256c79d90169133a/header.jpg?t=1785474787",
+    "metacritic_score": 80,
+    "hltb_main_hours": 42.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2499860"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 38.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/dragon-quest-vii-reimagined-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:30Z"
+  },
+  {
+    "id": "steam-377840",
+    "name": "FINAL FANTASY IX",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-04-14",
+    "reference_price": 20.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/377840/header.jpg?t=1775119109",
+    "metacritic_score": 84,
+    "hltb_main_hours": 37.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 20.99,
+        "regular_price": 20.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/377840"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 6.29,
+        "regular_price": 20.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-ix-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:32Z"
+  },
+  {
+    "id": "steam-2201320",
+    "name": "Date Everything!",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-06-17",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2201320/ab3232570bb8f41f23d39545e6c34f54b0bd4fdf/header.jpg?t=1786456292",
+    "metacritic_score": 78,
+    "hltb_main_hours": 20.1,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2201320"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/date-everything-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:33Z"
+  },
+  {
+    "id": "steam-520940",
+    "name": "MX vs ATV All Out",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-03-27",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/520940/header.jpg?t=1725011474",
+    "metacritic_score": 55,
+    "hltb_main_hours": 21.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/520940"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/mx-vs-atv-all-out-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:33Z"
+  },
+  {
+    "id": "steam-427520",
+    "name": "Factorio",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-08-14",
+    "reference_price": 35.0,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/427520/ab9a2df0a77caebde20dc45adc021de8cdcf7cc5/header.jpg?t=1792752343",
+    "metacritic_score": 90,
+    "hltb_main_hours": 53.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 35.0,
+        "regular_price": 35.0,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/427520"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 35.0,
+        "regular_price": 35.0,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/factorio-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:35Z"
+  },
+  {
+    "id": "steam-653530",
+    "name": "Return of the Obra Dinn",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-10-18",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/653530/header.jpg?t=1686697594",
+    "metacritic_score": 89,
+    "hltb_main_hours": 8.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/653530"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/return-of-the-obra-dinn-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:35Z"
+  },
+  {
+    "id": "steam-359870",
+    "name": "FINAL FANTASY X/X-2 HD Remaster",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-05-12",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/359870/header.jpg?t=1777343443",
+    "metacritic_score": 83,
+    "hltb_main_hours": 50.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/359870"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 49.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-x-x-2-hd-remaster-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:36Z"
+  },
+  {
+    "id": "steam-944080",
+    "name": "Pode",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-04-03",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/944080/header.jpg?t=1667212285",
+    "metacritic_score": 76,
+    "hltb_main_hours": 4.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/944080"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pode-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:36Z"
+  },
+  {
+    "id": "steam-531510",
+    "name": "Just Shapes & Beats",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-05-31",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/531510/header.jpg?t=1738790023",
+    "metacritic_score": 83,
+    "hltb_main_hours": 3.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/531510"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 11.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/just-shapes-and-beats-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:37Z"
+  },
+  {
+    "id": "steam-3558600",
+    "name": "Leafy Corner",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-07-30",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3558600/57deed9f6c4c6a94fba79c492dda70bf2311c435/header.jpg?t=1793970594",
+    "metacritic_score": null,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3558600"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/leafy-corner-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:37Z"
+  },
+  {
+    "id": "steam-203140",
+    "name": "Hitman: Absolution™",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2012-11-19",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/203140/header.jpg?t=1734461136",
+    "metacritic_score": 79,
+    "hltb_main_hours": 12.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/203140"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/hitman-absolution-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:39Z"
+  },
+  {
+    "id": "steam-2929170",
+    "name": "NEW MONOPOLY®",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2024-09-26",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2929170/98ccc61e7e8aa63fb2eacd6f3181cd1f6d2d734c/header.jpg?t=1778599639",
+    "metacritic_score": null,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2929170"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/new-monopoly-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:38Z"
+  },
+  {
+    "id": "steam-1026680",
+    "name": "FINAL FANTASY VIII - REMASTERED",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-09-03",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1026680/header.jpg?t=1775803140",
+    "metacritic_score": 73,
+    "hltb_main_hours": 38.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1026680"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 7.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/final-fantasy-viii-remastered-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:40Z"
+  },
+  {
+    "id": "steam-681280",
+    "name": "Descenders",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-05-07",
+    "reference_price": 24.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/681280/header.jpg?t=1764690930",
+    "metacritic_score": 78,
+    "hltb_main_hours": 5.2,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 6.24,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/681280"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 24.99,
+        "regular_price": 24.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/descenders-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:41Z"
+  },
+  {
+    "id": "steam-2166060",
+    "name": "Amanda the Adventurer",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-04-25",
+    "reference_price": 8.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2166060/header.jpg?t=1730134058",
+    "metacritic_score": null,
+    "hltb_main_hours": 1.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 8.99,
+        "regular_price": 8.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2166060"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 8.99,
+        "regular_price": 8.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/amanda-the-adventurer-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:41Z"
+  },
+  {
+    "id": "steam-2324290",
+    "name": "PAC-MAN WORLD 2 Re-PAC",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-09-25",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2324290/36685ccd84bc1e4cff66616c520b4bbdec5654f4/header.jpg?t=1782111604",
+    "metacritic_score": null,
+    "hltb_main_hours": 5.9,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 17.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2324290"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/pac-man-world-2-re-pac-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:42Z"
+  },
+  {
+    "id": "steam-1003590",
+    "name": "Tetris® Effect: Connected",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2021-08-17",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1003590/11d98bbb08ca8e16d015ae4a40b60920ae8dbe36/header.jpg?t=1774036904",
+    "metacritic_score": 93,
+    "hltb_main_hours": 3.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1003590"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/tetris-effect-connected-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:43Z"
+  },
+  {
+    "id": "steam-214490",
+    "name": "Alien: Isolation",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2014-10-06",
+    "reference_price": 39.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/214490/header.jpg?t=1793034411",
+    "metacritic_score": 81,
+    "hltb_main_hours": 18.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 39.99,
+        "regular_price": 39.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/214490"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/alien-isolation-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:43Z"
+  },
+  {
+    "id": "steam-3914860",
+    "name": "Moss: The Forgotten Relic ",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-07-16",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3914860/0559b495ccbdcca5ff81fdd0b3e06db05c3c3a8e/header.jpg?t=1788539047",
+    "metacritic_score": 81,
+    "hltb_main_hours": 7.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3914860"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/moss-the-forgotten-relic-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:45Z"
+  },
+  {
+    "id": "steam-1012880",
+    "name": "60 Seconds! Reatomized",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2019-07-25",
+    "reference_price": 9.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1012880/header.jpg?t=1792068495",
+    "metacritic_score": null,
+    "hltb_main_hours": 2.4,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1012880"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/60-seconds-reatomized-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:45Z"
+  },
+  {
+    "id": "steam-2640950",
+    "name": "Scott Pilgrim EX",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-03-02",
+    "reference_price": 28.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2640950/8c040ff56403fb179ef2d4310300d154aa443944/header.jpg?t=1787843563",
+    "metacritic_score": 74,
+    "hltb_main_hours": 4.0,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 28.99,
+        "regular_price": 28.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2640950"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 28.99,
+        "regular_price": 28.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/scott-pilgrim-ex-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:46Z"
+  },
+  {
+    "id": "steam-2103640",
+    "name": "Axis Football 2023",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2022-09-07",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2103640/header.jpg?t=1678124797",
+    "metacritic_score": null,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2103640"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 9.99,
+        "regular_price": 9.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/axis-football-2023-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:46Z"
+  },
+  {
+    "id": "steam-1238080",
+    "name": "Burnout™ Paradise Remastered",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-06-04",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1238080/header.jpg?t=1779987578",
+    "metacritic_score": 78,
+    "hltb_main_hours": 10.8,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1238080"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/burnout-paradise-remastered-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:48Z"
+  },
+  {
+    "id": "steam-774461",
+    "name": "The Jackbox Party Pack 5",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-10-17",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/774461/header.jpg?t=1728584545",
+    "metacritic_score": 78,
+    "hltb_main_hours": 3.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/774461"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-jackbox-party-pack-5-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:48Z"
+  },
+  {
+    "id": "steam-2653790",
+    "name": "The Exit 8",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-11-29",
+    "reference_price": 3.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2653790/header.jpg?t=1756464433",
+    "metacritic_score": null,
+    "hltb_main_hours": 0.7,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 2.79,
+        "regular_price": 3.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2653790"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 3.99,
+        "regular_price": 3.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/the-exit-8-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:49Z"
+  },
+  {
+    "id": "steam-1368820",
+    "name": "RollerCoaster Tycoon® 3: Complete Edition",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2020-09-24",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1368820/header.jpg?t=1779306991",
+    "metacritic_score": 72,
+    "hltb_main_hours": 20.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1368820"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/rollercoaster-tycoon-3-complete-edition-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:50Z"
+  },
+  {
+    "id": "steam-2923350",
+    "name": "Ultimate Sheep Raccoon",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2025-12-09",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/2923350/56a010e4b8d6afc5be654578ff017bbf5fc7f01d/header.jpg?t=1793719797",
+    "metacritic_score": null,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/2923350"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/ultimate-sheep-raccoon-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:51Z"
+  },
+  {
+    "id": "steam-1607680",
+    "name": "Bread & Fred",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2023-05-23",
+    "reference_price": 14.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/1607680/header.jpg?t=1773071421",
+    "metacritic_score": 73,
+    "hltb_main_hours": 4.5,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/1607680"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 14.99,
+        "regular_price": 14.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/bread-and-fred-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:52Z"
+  },
+  {
+    "id": "steam-586200",
+    "name": "Street Fighter 30th Anniversary Collection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2018-05-29",
+    "reference_price": 29.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/586200/header.jpg?t=1779341474",
+    "metacritic_score": 79,
+    "hltb_main_hours": 7.6,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/586200"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/street-fighter-30th-anniversary-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:53Z"
+  },
+  {
+    "id": "steam-289070",
+    "name": "Sid Meier’s Civilization® VI",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2016-10-20",
+    "reference_price": 59.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/289070/header.jpg?t=1792718069",
+    "metacritic_score": 88,
+    "hltb_main_hours": 23.3,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 59.99,
+        "regular_price": 59.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/289070"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 29.99,
+        "regular_price": 29.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/sid-meiers-civilization-vi-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:54Z"
+  },
+  {
+    "id": "steam-3817710",
+    "name": "Rugrats: Retro Rewind Collection",
+    "platforms": [
+      "PC",
+      "Switch"
+    ],
+    "release_date": "2026-05-22",
+    "reference_price": 19.99,
+    "image_url": "https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/3817710/acecedf063027f6936b9b895cbf72498816272d7/header.jpg?t=1779477350",
+    "metacritic_score": 44,
+    "hltb_main_hours": null,
+    "offers": [
+      {
+        "store": "Steam",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "PC",
+        "url": "https://store.steampowered.com/app/3817710"
+      },
+      {
+        "store": "Nintendo eShop",
+        "current_price": 19.99,
+        "regular_price": 19.99,
+        "format": "digital",
+        "platform": "Switch",
+        "url": "https://www.nintendo.com/us/store/products/rugrats-retro-rewind-collection-switch/"
+      }
+    ],
+    "updated_at": "2026-11-08T07:11:54Z"
   }
 ]

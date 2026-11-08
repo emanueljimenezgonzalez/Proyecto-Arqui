@@ -1,0 +1,14 @@
+# Claves locales
+.env
+
+# Visual Studio / .NET
+.vs/
+bin/
+obj/
+*.user
+
+# Registro de errores del scraper
+Scraper/logs/
+
+# Archivo temporal al guardar resultados
+*.json.tmp

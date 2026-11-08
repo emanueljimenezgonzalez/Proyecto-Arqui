@@ -30,7 +30,7 @@ Después, crear un Pull Request hacia `main` y pedir que otro integrante revise 
 - `feature/benchmark-documentacion`
 
 ## Evitar conflictos
-- Integrante 1 modifica principalmente `app/repo/`, `app/scrapers/` y `app/services/scraping_service.py`.
+- Integrante 1 modifica principalmente `app/repo/` y `Scraper/` (C#).
 - Integrante 2 modifica principalmente `app/main.py`, `app/templates/` y `app/static/`.
 - Integrante 3 modifica principalmente `app/benchmark.py` y `docs/`.
 - Los cambios en `app/models.py`, `requirements.txt` y el contrato de datos deben acordarse entre los tres.
