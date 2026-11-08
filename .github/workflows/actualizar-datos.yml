@@ -1,0 +1,72 @@
+# Actualización recurrente del catálogo.
+# Cada 6 horas corre el scraper de C# en una máquina Windows de GitHub, revisa el
+# games.json y, si está bien, lo sube a main. Render detecta el cambio y vuelve a
+# publicar la página con los datos nuevos.
+#
+# Necesita dos secrets en Settings > Secrets and variables > Actions:
+#   ESHOP_APP_ID y ESHOP_API_KEY (los mismos valores del .env del Integrante 1)
+name: Actualizar datos
+
+on:
+  schedule:
+    - cron: "0 */6 * * *"   # 00:00, 06:00, 12:00 y 18:00 UTC (6 p. m., 12 a. m., 6 a. m. y 12 p. m. en Costa Rica)
+  workflow_dispatch:         # botón "Run workflow" para correrlo a mano
+
+permissions:
+  contents: write            # para poder subir el games.json
+
+concurrency:
+  group: actualizar-datos    # nunca dos corridas al mismo tiempo
+  cancel-in-progress: false
+
+jobs:
+  scraping:
+    runs-on: windows-latest  # el scraper es .NET Framework 4.8.1, solo corre en Windows
+    timeout-minutes: 30
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Compilar el scraper
+        run: dotnet build Scraper/Scraper.sln -c Release
+
+      - name: Crear el .env con las claves
+        shell: pwsh
+        env:
+          ESHOP_APP_ID: ${{ secrets.ESHOP_APP_ID }}
+          ESHOP_API_KEY: ${{ secrets.ESHOP_API_KEY }}
+        run: |
+          if (-not $env:ESHOP_APP_ID -or -not $env:ESHOP_API_KEY) {
+            Write-Error "Faltan los secrets ESHOP_APP_ID y ESHOP_API_KEY"; exit 1
+          }
+          "ESHOP_APP_ID=$env:ESHOP_APP_ID`nESHOP_API_KEY=$env:ESHOP_API_KEY" | Set-Content -Encoding utf8NoBOM .env
+
+      - name: Ejecutar el scraper (paralelo)
+        run: Scraper/Scraper/bin/Release/net481/Scraper.exe
+
+      - name: Validar el games.json
+        env:
+          PYTHONIOENCODING: utf-8
+        run: python .github/scripts/validar_games.py Proyecto_Web_Scraping_Multinucleo/app/repo/games.json
+
+      - name: Subir los datos nuevos
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Proyecto_Web_Scraping_Multinucleo/app/repo/games.json
+          if git diff --cached --quiet; then
+            echo "No hubo cambios en los datos"
+            exit 0
+          fi
+          git commit -m "Actualizar datos del catálogo ($(date -u +'%Y-%m-%d %H:%M') UTC)"
+          git pull --rebase origin main
+          git push origin HEAD:main
+
+      - name: Guardar el registro de errores
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: errores-scraper
+          path: Scraper/logs/
+          if-no-files-found: ignore
