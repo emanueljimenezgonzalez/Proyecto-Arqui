@@ -56,3 +56,15 @@ Scraper/Scraper/bin/Debug/net481/Scraper.exe --secuencial   # versión secuencia
 
 ## Estado
 Esta plantilla contiene la estructura inicial y funciones de ejemplo. El equipo debe completar las fuentes de datos, la lógica de persistencia, los tres niveles y las pruebas.
+
+## Benchmark real (Integrante 3)
+
+Compilar `Scraper/Scraper.sln` en Visual Studio, configuración Debug, y comprobar que el archivo `.env` está en la raíz del repositorio. Desde la raíz:
+
+```powershell
+pip install -r Proyecto_Web_Scraping_Multinucleo/requirements-dev.txt
+cd Proyecto_Web_Scraping_Multinucleo
+python -m app.benchmark --mode real --repeats 3
+```
+
+El benchmark ejecuta el `Scraper.exe` real con modo secuencial y paralelo para 1, 2, 4 y el máximo de trabajadores. Requiere al menos 200 juegos en `app/repo/repo.db`. Los resultados y gráficos quedan en `results/`. Consultar `docs/INTEGRACION_INTEGRANTE3.md` para requisitos, interpretación y análisis.

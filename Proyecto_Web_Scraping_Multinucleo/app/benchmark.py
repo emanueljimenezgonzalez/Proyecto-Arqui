@@ -1,117 +1,169 @@
-"""Herramientas de medición para el proyecto de scraping multinúcleo.
+"""Benchmark real del scraper C# y modo sintético de comprobación.
 
-Modo demo:
-    python -m app.benchmark --mode demo --games 200 --repeats 3
+Ejemplo Windows, desde la raíz del repositorio:
+    python -m app.benchmark --mode real --repeats 3
 
-El modo demo valida las fórmulas y el mecanismo de medición con una carga simulada.
-No representa resultados reales de scraping y no debe presentarse como medición final.
-
-Modo real:
-    Requiere integrar las funciones secuencial y paralela de los scrapers reales.
-    Ver docs/INTEGRACION_INTEGRANTE3.md.
+El modo real ejecuta Scraper.exe, que mide el trabajo dentro del proceso y muestra
+"Tiempo total: X s". Se utiliza ese tiempo para excluir el arranque del proceso.
 """
 from __future__ import annotations
 
 import argparse
-import asyncio
 import csv
 import json
 import os
 import platform
+import re
+import sqlite3
 import statistics
+import subprocess
+import sys
 import time
-from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
-from typing import Any, Callable
+from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS_DIR = ROOT / "results"
+DEFAULT_EXE = ROOT.parent / "Scraper" / "Scraper" / "bin" / "Debug" / "net481" / "Scraper.exe"
+DB_PATH = ROOT / "app" / "repo" / "repo.db"
+TIME_PATTERN = re.compile(r"Tiempo total:\s*([0-9]+(?:[.,][0-9]+)?)\s*s", re.IGNORECASE)
+ERROR_PATTERN = re.compile(r"Errores registrados:\s*(\d+)", re.IGNORECASE)
 
 
 def calculate_metrics(sequential_seconds: float, parallel_seconds: float,
                       workers: int) -> dict[str, float | int]:
-    """Calcula speedup y eficiencia. Los tiempos deben ser positivos."""
     if sequential_seconds <= 0 or parallel_seconds <= 0:
         raise ValueError("Los tiempos deben ser mayores que cero.")
     if workers < 1:
         raise ValueError("workers debe ser al menos 1.")
     speedup = sequential_seconds / parallel_seconds
-    efficiency = speedup / workers
-    return {
-        "sequential_seconds": sequential_seconds,
-        "parallel_seconds": parallel_seconds,
-        "workers": workers,
-        "speedup": speedup,
-        "efficiency": efficiency,
-    }
+    return {"sequential_seconds": sequential_seconds,
+            "parallel_seconds": parallel_seconds, "workers": workers,
+            "speedup": speedup, "efficiency": speedup / workers}
 
 
-def available_worker_counts() -> list[int]:
-    """Devuelve 1, 2, 4 y el máximo disponible, sin repetir valores."""
-    maximum = os.cpu_count() or 1
+def available_worker_counts(maximum: int | None = None) -> list[int]:
+    maximum = maximum or os.cpu_count() or 1
     return sorted({n for n in (1, 2, 4, maximum) if n <= maximum})
 
 
-def synthetic_task(game: dict[str, Any], work_ms: int = 8) -> dict[str, Any]:
-    """Carga simulada para verificar el benchmark; no consulta sitios web."""
-    # Trabajo de espera simulada. No se debe usar como resultado académico final.
-    time.sleep(work_ms / 1000)
-    return {"id": game["id"], "ok": True}
+def parse_scraper_output(output: str) -> tuple[float, int | None]:
+    match = TIME_PATTERN.search(output)
+    if not match:
+        raise RuntimeError(
+            "El scraper no reportó 'Tiempo total: X s'. Salida recibida:\n" + output[-3000:]
+        )
+    seconds = float(match.group(1).replace(",", "."))
+    if seconds <= 0:
+        raise RuntimeError("El scraper reportó un tiempo no válido.")
+    error_match = ERROR_PATTERN.search(output)
+    return seconds, int(error_match.group(1)) if error_match else None
 
 
-def time_sync_batch(games: list[dict[str, Any]], workers: int,
-                    work_ms: int) -> float:
-    """Mide una carga de prueba secuencial o con pool de hilos."""
-    start = time.perf_counter()
-    if workers == 1:
-        for game in games:
-            synthetic_task(game, work_ms)
+def count_repo_games(db_path: Path = DB_PATH) -> int:
+    if not db_path.is_file():
+        raise FileNotFoundError(f"No se encontró la base REPO: {db_path}")
+    with sqlite3.connect(str(db_path)) as connection:
+        row = connection.execute("SELECT COUNT(*) FROM juegos").fetchone()
+    return int(row[0])
+
+
+def run_scraper(executable: Path, mode: str, workers: int | None = None,
+                timeout_seconds: int = 7200) -> dict[str, Any]:
+    if not executable.is_file():
+        raise FileNotFoundError(
+            f"No se encontró Scraper.exe en {executable}. "
+            "Compila Scraper.sln en Visual Studio, configuración Debug."
+        )
+    if mode not in {"sequential", "parallel"}:
+        raise ValueError("mode debe ser sequential o parallel.")
+    command = [str(executable)]
+    if mode == "sequential":
+        command.append("--secuencial")
     else:
-        with ThreadPoolExecutor(max_workers=workers) as executor:
-            list(executor.map(lambda game: synthetic_task(game, work_ms), games))
-    return time.perf_counter() - start
+        if workers is None or workers < 1:
+            raise ValueError("Indica un número válido de workers.")
+        command.extend(["--workers", str(workers)])
+
+    completed = subprocess.run(
+        command, cwd=str(ROOT.parent), capture_output=True, text=True,
+        encoding="utf-8", errors="replace", timeout=timeout_seconds,
+        check=False
+    )
+    output = (completed.stdout or "") + "\n" + (completed.stderr or "")
+    if completed.returncode != 0:
+        raise RuntimeError(f"Scraper terminó con código {completed.returncode}:\n{output[-3000:]}")
+    if "Faltan ESHOP_APP_ID" in output:
+        raise RuntimeError("Faltan ESHOP_APP_ID o ESHOP_API_KEY en el archivo .env de la raíz.")
+    if "No existe el REPO" in output or "No se encontro la carpeta" in output:
+        raise RuntimeError(output.strip())
+    seconds, errors = parse_scraper_output(output)
+    return {"seconds": seconds, "errors": errors, "output": output,
+            "command": command}
 
 
-def make_demo_games(count: int) -> list[dict[str, str]]:
-    return [{"id": f"demo-{i:04d}", "name": f"Juego de prueba {i}"} for i in range(count)]
+def run_real(executable: Path = DEFAULT_EXE, repeats: int = 3,
+             timeout_seconds: int = 7200, cooldown_seconds: float = 2.0,
+             maximum_workers: int | None = None) -> list[dict[str, Any]]:
+    if repeats < 1:
+        raise ValueError("repeats debe ser al menos 1.")
+    game_count = count_repo_games()
+    if game_count < 200:
+        raise ValueError(f"El REPO tiene {game_count} juegos. Se requieren al menos 200.")
+    worker_counts = available_worker_counts(maximum_workers)
+    seq_samples: list[dict[str, Any]] = []
+    par_samples: dict[int, list[dict[str, Any]]] = {n: [] for n in worker_counts}
 
+    # Se alterna el orden de las configuraciones entre repeticiones para reducir
+    # el sesgo de ejecutar siempre una configuración primero.
+    for repetition in range(repeats):
+        seq_samples.append(run_scraper(executable, "sequential", timeout_seconds=timeout_seconds))
+        if cooldown_seconds:
+            time.sleep(cooldown_seconds)
+        for workers in worker_counts:
+            par_samples[workers].append(
+                run_scraper(executable, "parallel", workers, timeout_seconds)
+            )
+            if cooldown_seconds:
+                time.sleep(cooldown_seconds)
 
-def run_demo(games_count: int, repeats: int, work_ms: int) -> list[dict[str, Any]]:
-    """Ejecuta benchmark de demostración con carga sintética."""
-    games = make_demo_games(games_count)
-    worker_counts = available_worker_counts()
-    sequential_samples = [time_sync_batch(games, 1, work_ms) for _ in range(repeats)]
-    sequential_median = statistics.median(sequential_samples)
+    sequential_median = statistics.median(x["seconds"] for x in seq_samples)
     rows: list[dict[str, Any]] = []
-
-    for workers in worker_counts:
-        samples = [time_sync_batch(games, workers, work_ms) for _ in range(repeats)]
-        parallel_median = statistics.median(samples)
+    for workers, samples in par_samples.items():
+        parallel_median = statistics.median(x["seconds"] for x in samples)
         metrics = calculate_metrics(sequential_median, parallel_median, workers)
         rows.append({
-            "mode": "demo_sintetico_no_final",
-            "games": games_count,
+            "mode": "scraping_real_csharp",
+            "games": game_count,
             "workers": workers,
             "sequential_seconds": round(sequential_median, 6),
             "parallel_seconds": round(parallel_median, 6),
-            "speedup": round(float(metrics["speedup"]), 4),
-            "efficiency": round(float(metrics["efficiency"]), 4),
+            "speedup": round(float(metrics["speedup"]), 6),
+            "efficiency": round(float(metrics["efficiency"]), 6),
             "repeats": repeats,
-            "work_ms_per_game": work_ms,
+            "sequential_samples": json.dumps([round(x["seconds"], 6) for x in seq_samples]),
+            "parallel_samples": json.dumps([round(x["seconds"], 6) for x in samples]),
+            "sequential_errors_median": statistics.median(
+                x["errors"] or 0 for x in seq_samples
+            ),
+            "parallel_errors_median": statistics.median(
+                x["errors"] or 0 for x in samples
+            ),
             "machine_cpu_count": os.cpu_count() or 1,
             "platform": platform.platform(),
+            "python_version": sys.version.split()[0],
+            "executable": str(executable),
         })
     return rows
 
 
 def write_results(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR) -> tuple[Path, Path]:
     output_dir.mkdir(parents=True, exist_ok=True)
-    csv_path = output_dir / "benchmark_results.csv"
-    json_path = output_dir / "benchmark_results.json"
+    csv_path, json_path = output_dir / "benchmark_results.csv", output_dir / "benchmark_results.json"
     if not rows:
         raise ValueError("No hay resultados para guardar.")
-    with csv_path.open("w", newline="", encoding="utf-8") as f:
-        writer = csv.DictWriter(f, fieldnames=list(rows[0].keys()))
+    with csv_path.open("w", newline="", encoding="utf-8") as file:
+        writer = csv.DictWriter(file, fieldnames=list(rows[0].keys()))
         writer.writeheader()
         writer.writerows(rows)
     json_path.write_text(json.dumps(rows, ensure_ascii=False, indent=2), encoding="utf-8")
@@ -119,61 +171,108 @@ def write_results(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR) ->
 
 
 def write_charts(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR) -> list[Path]:
-    """Genera gráficos de tiempo, speedup y eficiencia desde los resultados."""
     try:
         import matplotlib.pyplot as plt
     except ImportError as exc:
-        raise RuntimeError("Instala matplotlib con: pip install matplotlib") from exc
-
+        raise RuntimeError("Instala matplotlib con: pip install -r requirements-dev.txt") from exc
     output_dir.mkdir(parents=True, exist_ok=True)
-    workers = [row["workers"] for row in rows]
-    chart_specs = [
+    workers = [int(row["workers"]) for row in rows]
+    specs = [
         ("parallel_seconds", "Tiempo paralelo (segundos)", "tiempo_por_trabajadores.png"),
         ("speedup", "Speedup", "speedup_por_trabajadores.png"),
         ("efficiency", "Eficiencia", "eficiencia_por_trabajadores.png"),
     ]
     paths = []
-    for key, ylabel, filename in chart_specs:
+    for key, label, filename in specs:
         fig, ax = plt.subplots()
-        ax.plot(workers, [row[key] for row in rows], marker="o")
-        ax.set_xlabel("Cantidad de trabajadores")
-        ax.set_ylabel(ylabel)
-        ax.set_title(ylabel + " frente a trabajadores")
+        ax.plot(workers, [float(row[key]) for row in rows], marker="o")
+        ax.set_xlabel("Trabajadores del nivel 1")
+        ax.set_ylabel(label)
+        ax.set_title(label + " frente a trabajadores")
         ax.set_xticks(workers)
         ax.grid(True, alpha=0.3)
         fig.tight_layout()
         path = output_dir / filename
-        fig.savefig(path, dpi=150)
+        fig.savefig(path, dpi=160)
         plt.close(fig)
         paths.append(path)
     return paths
 
 
+def synthetic_task(game: dict[str, Any], work_ms: int = 8) -> None:
+    time.sleep(work_ms / 1000)
+
+
+def run_demo(games_count: int, repeats: int, work_ms: int) -> list[dict[str, Any]]:
+    """Modo de prueba sintético. No representa rendimiento del scraper."""
+    from concurrent.futures import ThreadPoolExecutor
+    games = [{"id": i} for i in range(games_count)]
+    sequential = []
+    for _ in range(repeats):
+        start = time.perf_counter()
+        for game in games:
+            synthetic_task(game, work_ms)
+        sequential.append(time.perf_counter() - start)
+    seq_median = statistics.median(sequential)
+    rows = []
+    for workers in available_worker_counts():
+        samples = []
+        for _ in range(repeats):
+            start = time.perf_counter()
+            if workers == 1:
+                for game in games:
+                    synthetic_task(game, work_ms)
+            else:
+                with ThreadPoolExecutor(max_workers=workers) as pool:
+                    list(pool.map(lambda g: synthetic_task(g, work_ms), games))
+            samples.append(time.perf_counter() - start)
+        par_median = statistics.median(samples)
+        metrics = calculate_metrics(seq_median, par_median, workers)
+        rows.append({"mode": "demo_sintetico_no_final", "games": games_count,
+                     "workers": workers, "sequential_seconds": seq_median,
+                     "parallel_seconds": par_median, "speedup": metrics["speedup"],
+                     "efficiency": metrics["efficiency"], "repeats": repeats,
+                     "machine_cpu_count": os.cpu_count() or 1, "platform": platform.platform()})
+    return rows
+
+
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Benchmark del proyecto multinúcleo")
-    parser.add_argument("--mode", choices=["demo"], default="demo",
-                        help="demo valida las fórmulas con una carga simulada")
-    parser.add_argument("--games", type=int, default=200)
+    parser = argparse.ArgumentParser(description="Medición del scraper multinúcleo")
+    parser.add_argument("--mode", choices=["real", "demo"], default="real")
+    parser.add_argument("--exe", type=Path, default=DEFAULT_EXE,
+                        help="Ruta a Scraper.exe compilado")
     parser.add_argument("--repeats", type=int, default=3)
+    parser.add_argument("--timeout", type=int, default=7200)
+    parser.add_argument("--cooldown", type=float, default=2.0)
+    parser.add_argument("--max-workers", type=int, default=None,
+                        help="Permite fijar el máximo para pruebas controladas")
+    parser.add_argument("--games", type=int, default=200,
+                        help="Cantidad para el modo demo")
     parser.add_argument("--work-ms", type=int, default=8)
     args = parser.parse_args()
+    if args.repeats < 1 or args.timeout < 1 or args.cooldown < 0:
+        parser.error("repeats y timeout deben ser positivos y cooldown no puede ser negativo.")
 
-    if args.games < 1 or args.repeats < 1 or args.work_ms < 0:
-        parser.error("games y repeats deben ser positivos; work-ms no puede ser negativo.")
+    if args.mode == "real":
+        rows = run_real(args.exe, args.repeats, args.timeout, args.cooldown, args.max_workers)
+    else:
+        if args.games < 1 or args.work_ms < 0:
+            parser.error("games debe ser positivo y work-ms no puede ser negativo.")
+        rows = run_demo(args.games, args.repeats, args.work_ms)
 
-    rows = run_demo(args.games, args.repeats, args.work_ms)
     csv_path, json_path = write_results(rows)
-    chart_paths = write_charts(rows)
-    print("Benchmark de demostración terminado.")
-    print("ATENCIÓN: estos resultados son sintéticos y no son mediciones del scraping real.")
-    print(f"CSV: {csv_path}")
-    print(f"JSON: {json_path}")
-    for chart_path in chart_paths:
-        print(f"Gráfico: {chart_path}")
-    print()
-    print(f"{'Trabajadores':>14} {'Secuencial (s)':>16} {'Paralelo (s)':>14} {'Speedup':>10} {'Eficiencia':>12}")
+    charts = write_charts(rows)
+    print("Medición terminada.")
+    print("Tipo:", rows[0]["mode"])
+    if rows[0]["mode"] == "demo_sintetico_no_final":
+        print("AVISO: los datos sintéticos no son resultados académicos.")
+    print("CSV:", csv_path)
+    print("JSON:", json_path)
+    for chart in charts:
+        print("Gráfico:", chart)
+    print(f"{'Workers':>8} {'Secuencial (s)':>16} {'Paralelo (s)':>14} {'Speedup':>10} {'Eficiencia':>12}")
     for row in rows:
-        print(f"{row['workers']:>14} {row['sequential_seconds']:>16.4f} "
+        print(f"{row['workers']:>8} {row['sequential_seconds']:>16.4f} "
               f"{row['parallel_seconds']:>14.4f} {row['speedup']:>10.3f} "
               f"{row['efficiency']:>12.3f}")
 

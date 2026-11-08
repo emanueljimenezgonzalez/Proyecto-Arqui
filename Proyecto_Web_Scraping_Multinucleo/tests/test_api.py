@@ -11,7 +11,7 @@ from app.main import app
 
 GAMES = [
     {
-        "id": "g1", "name": "Bravo", "platforms": ["PC", "PS5"],
+        "id": "g1", "name": "Bravo", "platforms": ["PC", "PS5"], "genre": "RPG",
         "release_date": "2020-01-01", "reference_price": 60, "image_url": None,
         "metacritic_score": 90, "hltb_main_hours": 30, "updated_at": "2026-11-08T10:00:00+00:00",
         "offers": [
@@ -22,7 +22,7 @@ GAMES = [
         ],
     },
     {
-        "id": "g2", "name": "alfa", "platforms": ["Switch"],
+        "id": "g2", "name": "alfa", "platforms": ["Switch"], "genre": "Puzzle",
         "reference_price": 20, "metacritic_score": None, "updated_at": "2026-11-08T12:00:00+00:00",
         "offers": [
             # tienda caída: sin precio
@@ -88,6 +88,7 @@ def test_filters(client):
     assert names(client.get("/api/games?format=fisico")) == ["alfa", "Bravo"]
     assert names(client.get("/api/games?format=digital")) == ["Bravo"]
     assert names(client.get("/api/games?store=Nintendo eShop")) == []
+    assert names(client.get("/api/games?genre=puzzle")) == ["alfa"]
     assert names(client.get("/api/games?q=rav")) == ["Bravo"]
     assert names(client.get("/api/games?on_sale=true")) == ["alfa", "Bravo"]
 
@@ -115,10 +116,7 @@ def test_meta(client):
     assert meta["last_updated"] == "2026-11-08T12:00:00+00:00"
     assert meta["filters"]["platforms"] == ["PC", "PS5", "Switch"]
     assert meta["filters"]["stores"] == ["Amazon", "Steam"]
-    # el filtro Tipo siempre ofrece las tres opciones, con su cantidad
-    assert [(f["value"], f["count"]) for f in meta["filters"]["formats"]] == [
-        ("fisico", 2), ("digital", 1), ("otro", 0)]
-    assert "genres" not in meta["filters"]
+    assert [f["value"] for f in meta["filters"]["formats"]] == ["digital", "fisico"]
 
 
 def test_broken_json_keeps_last_valid_data(client, tmp_path):

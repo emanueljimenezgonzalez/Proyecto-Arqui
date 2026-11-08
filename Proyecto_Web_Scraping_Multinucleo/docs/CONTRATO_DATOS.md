@@ -1,23 +1,39 @@
-# Contrato de datos entre integrantes
+# Contrato de datos compartido
 
-Cada juego usa estas claves:
-- `id`: identificador estable
-- `name`: nombre
-- `platforms`: lista de plataformas
-- `release_date`: fecha de lanzamiento
-- `reference_price`: precio de referencia
-- `image_url`: imagen
-- `metacritic_score`: puntuación
-- `hltb_main_hours`: tiempo principal de juego en horas
-- `offers`: lista de ofertas de tiendas
-- `updated_at`: fecha/hora de actualización
+Todos los módulos deben usar estos nombres de campo. Si se necesita un cambio, coordinarlo entre los tres integrantes.
 
-Cada oferta usa:
-- `store`
-- `current_price`
-- `regular_price`
-- `format`
-- `platform`
-- `url`
+## Videojuego
+```json
+{
+  "id": "game-001",
+  "name": "Nombre del juego",
+  "platforms": ["PC", "PS5"],
+  "release_date": "2024-01-01",
+  "reference_price": 59.99,
+  "image_url": null,
+  "metacritic_score": null,
+  "hltb_main_hours": null,
+  "offers": [],
+  "updated_at": null
+}
+```
 
-Los precios deben tener una moneda definida por el equipo y mostrarse de forma consistente. No mezclen monedas al escoger el mejor precio sin convertirlas.
+## Oferta de tienda
+```json
+{
+  "store": "Nombre de tienda",
+  "current_price": 39.99,
+  "regular_price": 59.99,
+  "format": "digital",
+  "platform": "PC",
+  "url": "https://example.com/producto"
+}
+```
+
+## Reglas
+- `id` debe identificar el juego de forma estable.
+- Los precios deben tener una moneda definida por el equipo.
+- No comparar precios de monedas diferentes sin conversión.
+- Si una fuente no responde, conservar el dato previo válido cuando exista y registrar el fallo.
+- `updated_at` indica cuándo se consultaron los datos.
+- `discount_percent` y `best_price` se calculan a partir de las ofertas válidas, no se escriben manualmente en cada registro.
