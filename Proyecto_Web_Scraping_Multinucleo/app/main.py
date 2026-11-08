@@ -1,10 +1,11 @@
 from pathlib import Path
-from fastapi import FastAPI, Request
+
+from fastapi import FastAPI, HTTPException, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
 
-from app.repo.repository import list_games
+from app.api.catalog import all_games, catalog_meta, filter_games, sort_games
 
 BASE_DIR = Path(__file__).resolve().parent
 app = FastAPI(title="Hottest Deals - Videojuegos")
@@ -13,28 +14,36 @@ templates = Jinja2Templates(directory=BASE_DIR / "templates")
 
 
 @app.get("/", response_class=HTMLResponse)
-def home(request: Request, platform: str | None = None, sort: str = "name"):
-    games = list_games()
-    if platform:
-        games = [g for g in games if platform.lower() in [p.lower() for p in g.get("platforms", [])]]
-    if sort == "price":
-        games.sort(key=lambda g: g.get("best_price") if g.get("best_price") is not None else float("inf"))
-    elif sort == "discount":
-        games.sort(key=lambda g: g.get("discount_percent", 0), reverse=True)
-    elif sort == "score":
-        games.sort(key=lambda g: g.get("metacritic_score") or 0, reverse=True)
-    else:
-        games.sort(key=lambda g: g.get("name", "").lower())
-    return templates.TemplateResponse(
-        request=request,
-        name="index.html",
-        context={"games": games, "platform": platform or "", "sort": sort},
-    )
+def home(request: Request):
+    # La página es un "cascarón": las tarjetas las arma app/static/app.js con la API.
+    return templates.TemplateResponse(request=request, name="index.html", context={})
 
 
 @app.get("/api/games")
-def games_api():
-    return list_games()
+def games_api(q: str | None = None, platform: str | None = None, format: str | None = None,
+              store: str | None = None, genre: str | None = None, on_sale: bool = False,
+              sort: str = "name", order: str | None = None):
+    """Lista de juegos (contrato + campos derivados), con filtros y orden opcionales.
+
+    Ejemplo: /api/games?platform=PS5&format=fisico&sort=discount
+    """
+    games = filter_games(all_games(), q=q, platform=platform, fmt=format, store=store,
+                         genre=genre, on_sale=on_sale)
+    return sort_games(games, sort, order)
+
+
+@app.get("/api/games/{game_id}")
+def game_detail_api(game_id: str):
+    for game in all_games():
+        if game["id"] == game_id:
+            return game
+    raise HTTPException(status_code=404, detail="Juego no encontrado")
+
+
+@app.get("/api/meta")
+def meta_api():
+    """Última actualización, moneda y opciones disponibles para los filtros."""
+    return catalog_meta(all_games())
 
 
 @app.get("/health")

@@ -109,7 +109,6 @@
     form.elements.genre.closest("label").hidden = f.genres.length === 0;
     $("#last-updated").textContent = dateTime(meta.last_updated);
     $("#total-games").textContent = `${meta.total_games} juegos en el catálogo`;
-    $("#sample-banner").hidden = meta.data_source === "repo";
   }
 
   // ---------- lista ----------
