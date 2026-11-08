@@ -4,7 +4,7 @@
   "use strict";
 
   const REFRESH_MS = 5 * 60 * 1000; // revisa si el scraper publicó datos nuevos
-  const FILTER_KEYS = ["q", "platform", "genre", "format", "store", "sort", "on_sale"];
+  const FILTER_KEYS = ["q", "platform", "format", "store", "sort", "on_sale"];
   const FORMAT_LABELS = { digital: "Digital", fisico: "Físico", otro: "Otro" };
 
   const $ = (sel) => document.querySelector(sel);
@@ -103,10 +103,9 @@
     money = new Intl.NumberFormat("es-CR", { style: "currency", currency: meta.currency || "USD" });
     const f = meta.filters;
     fillSelect("platform", f.platforms);
-    fillSelect("genre", f.genres);
-    fillSelect("format", f.formats);
+    // Tipo: físico, digital u otro, con la cantidad de juegos de cada uno
+    fillSelect("format", f.formats.map((o) => ({ value: o.value, label: `${o.label} (${o.count})` })));
     fillSelect("store", f.stores);
-    form.elements.genre.closest("label").hidden = f.genres.length === 0;
     $("#last-updated").textContent = dateTime(meta.last_updated);
     $("#total-games").textContent = `${meta.total_games} juegos en el catálogo`;
   }
@@ -209,7 +208,7 @@
         <div><dt>HowLongToBeat (historia)</dt><dd>${esc(hltb)}</dd></div>
         <div><dt>Precio sugerido</dt><dd>${price(g.reference_price)}</dd></div>
         <div><dt>Lanzamiento</dt><dd>${esc(g.release_date || "Sin dato")}</dd></div>
-        ${g.genre ? `<div><dt>Tipo</dt><dd>${esc(g.genre)}</dd></div>` : ""}
+        <div><dt>Tipo</dt><dd>${esc(g.formats.map((f) => FORMAT_LABELS[f] || f).join(", ") || "Sin dato")}</dd></div>
       </dl>
 
       <h3>Precios por tienda</h3>

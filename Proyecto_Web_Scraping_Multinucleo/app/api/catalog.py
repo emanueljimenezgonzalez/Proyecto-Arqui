@@ -152,9 +152,12 @@ def _offer_matches(offer: dict, platform: str | None, fmt: str | None, store: st
 
 
 def filter_games(games: list[dict], *, q: str | None = None, platform: str | None = None,
-                 fmt: str | None = None, store: str | None = None, genre: str | None = None,
+                 fmt: str | None = None, store: str | None = None,
                  on_sale: bool = False) -> list[dict]:
     """Filtra juegos.
+
+    El filtro "Tipo" de la página es el formato de la oferta (offers[].format:
+    físico, digital u otro), como acordó el equipo.
 
     Plataforma, formato y tienda se aplican a las OFERTAS: el juego aparece si
     tiene al menos una oferta con precio que cumpla los tres filtros a la vez, y
@@ -173,8 +176,6 @@ def filter_games(games: list[dict], *, q: str | None = None, platform: str | Non
                 continue
             # se recalculan los derivados con las ofertas filtradas (lista completa en el detalle)
             g = {**enrich({**g, "offers": matching}), "offers": g["offers"]}
-        if genre and (g.get("genre") or "").lower() != genre.lower():
-            continue
         if on_sale and not g["on_sale"]:
             continue
         out.append(g)
@@ -213,11 +214,12 @@ def catalog_meta(games: list[dict]) -> dict:
         "data_source": "repo" if path == REPO_DATA_FILE else path.name,
         "filters": {
             "platforms": sorted({p for g in games for p in g["platforms"] if p}),
+            # Siempre las tres opciones del enunciado, con cuántos juegos tiene cada una
             "formats": [
-                {"value": f, "label": FORMAT_LABELS[f]}
-                for f in ("digital", "fisico", "otro") if any(f in g["formats"] for g in games)
+                {"value": f, "label": FORMAT_LABELS[f],
+                 "count": sum(1 for g in games if f in g["formats"])}
+                for f in ("fisico", "digital", "otro")
             ],
             "stores": sorted({s for g in games for s in g["stores"]}),
-            "genres": sorted({g["genre"] for g in games if g.get("genre")}),
         },
     }
