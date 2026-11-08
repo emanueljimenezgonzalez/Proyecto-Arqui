@@ -14,13 +14,13 @@ def load_repo() -> list[dict]:
 def list_games() -> list[dict]:
     games = load_repo()
     for game in games:
-        offers = game.get("offers", [])
-        prices = [o["current_price"] for o in offers if o.get("current_price") is not None]
-        game["best_price"] = min(prices) if prices else None
-        regular_prices = [o["regular_price"] for o in offers if o.get("regular_price") is not None]
-        regular = min(regular_prices) if regular_prices else None
+        offers = [o for o in game.get("offers", []) if o.get("current_price") is not None]
+        best = min(offers, key=lambda o: o["current_price"]) if offers else None
+        game["best_price"] = best["current_price"] if best else None
+        # El descuento se compara con el precio regular de la misma tienda
+        regular = best.get("regular_price") if best else None
         game["discount_percent"] = round((1 - game["best_price"] / regular) * 100, 1) if (
-            game["best_price"] is not None and regular and regular > 0 and game["best_price"] < regular
+            best is not None and regular and regular > 0 and game["best_price"] < regular
         ) else 0
     return games
 

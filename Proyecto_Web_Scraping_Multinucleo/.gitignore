@@ -3,5 +3,6 @@ __pycache__/
 *.py[cod]
 .env
 *.db
+!app/repo/repo.db
 .pytest_cache/
 .DS_Store
