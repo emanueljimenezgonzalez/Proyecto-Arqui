@@ -47,7 +47,7 @@ namespace Scraper
             return datos["data"];
         }
 
-        // Busca un juego por nombre y devuelve su appid si el nombre coincide
+        // Solo devuelve el appid si el nombre coincide
         public static async Task<int?> BuscarAppId(string nombre)
         {
             string url = "https://store.steampowered.com/api/storesearch/?cc=us&l=en&term=" + System.Uri.EscapeDataString(nombre);

@@ -8,7 +8,7 @@ namespace Scraper
 {
     public static class Eshop
     {
-        // Buscador que usa nintendo.com; la clave se lee del archivo .env
+        // Es el buscador (Algolia) que usa la pagina de nintendo.com
         static readonly string AppId = Datos.Clave("ESHOP_APP_ID");
         static readonly string UrlBusqueda = "https://" + (AppId ?? "").ToLowerInvariant() + "-dsn.algolia.net/1/indexes/store_game_en_us/query";
         static readonly Dictionary<string, string> encabezados = new Dictionary<string, string>
@@ -40,8 +40,8 @@ namespace Scraper
             return oferta;
         }
 
-        // Una pagina del catalogo, ordenado por popularidad (se usa para generar el REPO).
-        // Se quitan los juegos publicados por Nintendo porque no estan en Steam
+        // Pagina del catalogo por popularidad, para generar el REPO
+        // Se quitan los juegos de Nintendo porque no estan en Steam
         public static Task<JArray> Listar(int pagina)
         {
             string filtro = "platform:\"Nintendo Switch\" AND topLevelCategory:Games AND NOT softwarePublisher:Nintendo";

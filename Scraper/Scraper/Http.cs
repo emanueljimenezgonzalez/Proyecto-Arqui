@@ -63,8 +63,7 @@ namespace Scraper
             });
         }
 
-        // Devuelve el texto de la respuesta, o null si la pagina no existe (404).
-        // Si falla despues de los intentos lanza una excepcion.
+        // Devuelve null si la pagina no existe (404); si fallan los 3 intentos lanza una excepcion
         static async Task<string> Pedir(string sitio, Func<HttpRequestMessage> crearMensaje)
         {
             SemaphoreSlim limite = limites[sitio];

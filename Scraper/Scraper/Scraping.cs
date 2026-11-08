@@ -12,7 +12,7 @@ namespace Scraper
 
         public static Dictionary<string, Juego> Anteriores = new Dictionary<string, Juego>();
 
-        // Version paralela. Nivel 1: N hilos toman juegos de una cola compartida
+        // Nivel 1: N hilos toman juegos de una cola compartida
         public static Juego[] Paralelo(List<JuegoRepo> juegos, int workers)
         {
             var resultados = new Juego[juegos.Count];
@@ -38,8 +38,7 @@ namespace Scraper
             return resultados;
         }
 
-        // Nivel 2: cada fuente del juego corre en su propia tarea del ThreadPool,
-        // que reparte las tareas entre los nucleos
+        // Nivel 2: cada fuente corre en una tarea del ThreadPool, que las reparte entre los nucleos
         static async Task<Juego> ProcesarParalelo(JuegoRepo juego)
         {
             var tiendas = Task.Run(() => ConsultarTiendas(juego));
@@ -57,7 +56,7 @@ namespace Scraper
             return await Task.WhenAll(steam, eshop);
         }
 
-        // Version secuencial de referencia: un juego, una fuente y una tienda a la vez
+        // Referencia para el benchmark: un juego, una fuente y una tienda a la vez
         public static Juego[] Secuencial(List<JuegoRepo> juegos)
         {
             var resultados = new Juego[juegos.Count];
@@ -87,7 +86,7 @@ namespace Scraper
             }
         }
 
-        // Arma el registro final. Si una fuente fallo se usa el dato de la corrida anterior
+        // Si una fuente fallo se usa el dato de la corrida anterior
         static Juego Unir(JuegoRepo repo, Respuesta<Oferta>[] tiendas, Respuesta<int?> metacritic, Respuesta<double?> hltb)
         {
             Juego anterior;

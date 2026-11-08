@@ -7,8 +7,8 @@ using Newtonsoft.Json.Linq;
 
 namespace Scraper
 {
-    // Arma el REPO con juegos que esten en el eShop (Switch) y en Steam.
-    // Se corre una sola vez; despues el archivo se puede editar a mano.
+    // Arma el REPO con juegos que esten en el eShop y en Steam
+    // Se corre una sola vez; despues repo.db se puede editar a mano
     public static class GenerarRepo
     {
         const int PausaEntreJuegosMs = 1000;
@@ -36,7 +36,6 @@ namespace Scraper
                     if (repo.Count >= cantidad)
                         break;
 
-                    // Solo juegos de Switch con precio
                     double? precio = (double?)hit["price"]?["regPrice"];
                     if ((string)hit["platform"] != "Nintendo Switch" || precio == null || precio <= 0)
                         continue;
