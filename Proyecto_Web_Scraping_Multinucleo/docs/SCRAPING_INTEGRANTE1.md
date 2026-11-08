@@ -77,4 +77,6 @@ Scraper/Scraper/bin/Debug/net481/Scraper.exe --secuencial
 
 `--limite K` procesa solo K juegos. Al final se imprime `Tiempo total: X s` para el benchmark.
 
-Queda por definir con el equipo el intervalo de actualización y dónde va a correr.
+## Actualización
+
+GitHub Actions corre el scraper cada 6 horas en una máquina Windows, revisa el `games.json` y lo sube a `main`, y Render vuelve a publicar la página. Escogimos 6 horas porque los precios de Steam y el eShop cambian una o dos veces al día, el scraping dura menos de 3 minutos y 4 corridas al día es poca carga para los sitios. Las claves del eShop están en los Secrets del repositorio. Si falta el `.env` o el REPO, el programa termina con código 1, para que la corrida salga como fallida en vez de pasar sin hacer nada.

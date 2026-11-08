@@ -15,7 +15,8 @@ namespace Scraper
         //   Scraper.exe --secuencial    version secuencial de referencia
         //   --limite K                  procesa solo los primeros K juegos del REPO
         //   Scraper.exe --generar-repo  arma el REPO (200 juegos, o K con --limite)
-        static void Main(string[] args)
+        // Devuelve 1 si no pudo correr, para que GitHub Actions lo marque como fallo
+        static int Main(string[] args)
         {
             Console.OutputEncoding = Encoding.UTF8;
 
@@ -26,7 +27,7 @@ namespace Scraper
             if (Datos.Clave("ESHOP_APP_ID") == null || Datos.Clave("ESHOP_API_KEY") == null)
             {
                 Console.WriteLine("Faltan ESHOP_APP_ID y ESHOP_API_KEY en " + Path.Combine(Datos.Raiz, ".env") + " (ver .env.example)");
-                return;
+                return 1;
             }
 
             if (args.Contains("--generar-repo"))
@@ -35,16 +36,16 @@ namespace Scraper
                 if (File.Exists(Datos.RutaRepo))
                 {
                     Console.WriteLine("Ya existe el REPO. Si quiere generarlo de nuevo, borre primero " + Datos.RutaRepo);
-                    return;
+                    return 1;
                 }
                 GenerarRepo.Ejecutar(limite > 0 ? limite : 200);
-                return;
+                return 0;
             }
 
             if (!File.Exists(Datos.RutaRepo))
             {
                 Console.WriteLine("No existe el REPO: " + Datos.RutaRepo);
-                return;
+                return 1;
             }
 
             var repo = Datos.LeerRepo();
@@ -65,6 +66,7 @@ namespace Scraper
             Console.WriteLine("Errores registrados: " + Datos.CantidadErrores + " (ver " + Datos.RutaErrores + ")");
             Console.WriteLine("Resultados en: " + Datos.RutaSalida);
             Console.WriteLine("Tiempo total: " + reloj.Elapsed.TotalSeconds.ToString("0.000", CultureInfo.InvariantCulture) + " s");
+            return 0;
         }
 
         static int LeerNumero(string[] args, string nombre, int porDefecto)
