@@ -31,7 +31,7 @@ namespace Scraper
             return Math.Round((int)compMain / 3600.0, 1);
         }
 
-        // Busca el id del juego con el buscador de la pagina (se usa para generar el REPO)
+        // Solo se usa al generar el REPO
         public static async Task<int?> BuscarId(string nombre)
         {
             var encabezados = new Dictionary<string, string>

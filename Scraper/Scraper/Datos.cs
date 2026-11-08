@@ -18,7 +18,7 @@ namespace Scraper
         static readonly object candadoErrores = new object();
         public static int CantidadErrores = 0;
 
-        // Sube carpetas desde el .exe hasta encontrar la raiz del repo
+        // El .exe queda en bin\Debug, por eso se sube hasta la raiz del repo
         static string BuscarRaiz()
         {
             var carpeta = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
@@ -29,7 +29,7 @@ namespace Scraper
             return carpeta.FullName;
         }
 
-        // Lee un valor del archivo .env de la raiz del repo (no se sube a GitHub)
+        // Las claves van en .env porque ese archivo no se sube a GitHub
         public static string Clave(string nombre)
         {
             string ruta = Path.Combine(Raiz, ".env");
@@ -48,7 +48,6 @@ namespace Scraper
             return null;
         }
 
-        // El REPO es una base de datos SQLite (repo.db) con una tabla "juegos"
         static SQLiteConnection AbrirRepo()
         {
             var conexion = new SQLiteConnection("Data Source=" + RutaRepo);
@@ -65,7 +64,7 @@ namespace Scraper
             {
                 while (lector.Read())
                 {
-                    // Una fila sin id no se puede usar (puede pasar si se agrega a mano y queda incompleta)
+                    // Puede pasar si se agrega una fila a mano y queda incompleta
                     if (lector["id"] is DBNull)
                     {
                         Console.WriteLine("Se ignoro una fila del REPO sin id");

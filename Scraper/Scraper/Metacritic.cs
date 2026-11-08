@@ -50,7 +50,6 @@ namespace Scraper
                     else
                         switchScore = (int)score;
                 }
-                // Si la version de PC no tiene score se usa el de Switch
                 return pc ?? switchScore;
             }
             throw new Exception("No se encontraron los datos del juego en la pagina");
