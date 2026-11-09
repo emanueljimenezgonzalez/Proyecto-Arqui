@@ -21,14 +21,14 @@ def home(request: Request):
 
 @app.get("/api/games")
 def games_api(q: str | None = None, platform: str | None = None, format: str | None = None,
-              store: str | None = None, on_sale: bool = False,
+              store: str | None = None, genre: str | None = None, on_sale: bool = False,
               sort: str = "name", order: str | None = None):
     """Lista de juegos (contrato + campos derivados), con filtros y orden opcionales.
 
     Ejemplo: /api/games?platform=PS5&format=fisico&sort=discount
     """
     games = filter_games(all_games(), q=q, platform=platform, fmt=format, store=store,
-                         on_sale=on_sale)
+                         genre=genre, on_sale=on_sale)
     return sort_games(games, sort, order)
 
 

@@ -153,7 +153,7 @@ def _offer_matches(offer: dict, platform: str | None, fmt: str | None, store: st
 
 def filter_games(games: list[dict], *, q: str | None = None, platform: str | None = None,
                  fmt: str | None = None, store: str | None = None,
-                 on_sale: bool = False) -> list[dict]:
+                 genre: str | None = None, on_sale: bool = False) -> list[dict]:
     """Filtra juegos.
 
     El filtro "Tipo" de la página es el formato de la oferta (offers[].format:
@@ -170,6 +170,15 @@ def filter_games(games: list[dict], *, q: str | None = None, platform: str | Non
     for g in games:
         if query and query not in (g.get("name") or "").lower():
             continue
+        if genre:
+            game_genres = g.get("genre") or []
+            if isinstance(game_genres, str):
+                game_genres = [game_genres]
+            elif not isinstance(game_genres, (list, tuple, set)):
+                game_genres = []
+            normalized_genres = {str(item).strip().casefold() for item in game_genres if item}
+            if genre.strip().casefold() not in normalized_genres:
+                continue
         if by_offer:
             matching = [o for o in g["offers"] if _offer_matches(o, platform, fmt, store)]
             if not matching:
@@ -214,12 +223,19 @@ def catalog_meta(games: list[dict]) -> dict:
         "data_source": "repo" if path == REPO_DATA_FILE else path.name,
         "filters": {
             "platforms": sorted({p for g in games for p in g["platforms"] if p}),
-            # Siempre las tres opciones del enunciado, con cuántos juegos tiene cada una
             "formats": [
                 {"value": f, "label": FORMAT_LABELS[f],
                  "count": sum(1 for g in games if f in g["formats"])}
-                for f in ("fisico", "digital", "otro")
+                for f in ("digital", "fisico")
+                if any(f in g["formats"] for g in games)
             ],
             "stores": sorted({s for g in games for s in g["stores"]}),
+            "genres": sorted({
+                str(item).strip()
+                for g in games
+                for item in ([g.get("genre")] if isinstance(g.get("genre"), str)
+                             else (g.get("genre") or []))
+                if item and str(item).strip()
+            }, key=str.casefold),
         },
     }
