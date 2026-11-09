@@ -12,3 +12,13 @@ Scraper/logs/
 
 # Archivo temporal al guardar resultados
 *.json.tmp
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/

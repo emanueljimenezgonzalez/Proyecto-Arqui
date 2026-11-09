@@ -32,6 +32,10 @@ namespace Scraper
         // Las claves van en .env porque ese archivo no se sube a GitHub
         public static string Clave(string nombre)
         {
+            string variableEntorno = Environment.GetEnvironmentVariable(nombre);
+            if (!string.IsNullOrEmpty(variableEntorno))
+                return variableEntorno;
+
             string ruta = Path.Combine(Raiz, ".env");
             if (!File.Exists(ruta))
                 return null;

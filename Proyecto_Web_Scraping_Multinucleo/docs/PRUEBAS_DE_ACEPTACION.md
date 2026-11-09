@@ -1,39 +1,39 @@
 # Pruebas de aceptación del equipo
 
-Marcar cada punto cuando esté implementado y probado. La plantilla inicial no cumple todavía todos estos puntos.
+Estado de verificación de cada requerimiento del proyecto.
 
 ## Datos y scraping
-- [ ] El REPO tiene al menos 200 juegos y puede editarse sin cambiar el código.
-- [ ] Cada juego incluye nombre, plataformas, fecha y precio de referencia.
-- [ ] Se consultan al menos dos tiendas por juego.
-- [ ] Se obtiene score de Metacritic.
-- [ ] Se obtiene tiempo de HowLongToBeat.
-- [ ] El nivel 1 procesa juegos en paralelo.
-- [ ] El nivel 2 consulta fuentes de un juego en paralelo.
-- [ ] El nivel 3 consulta tiendas en paralelo.
-- [ ] Hay timeout, registro de fallos y reintentos controlados.
-- [ ] Una fuente caída no detiene toda la ejecución.
+- [x] El REPO tiene al menos 200 juegos y puede editarse sin cambiar el código (`app/repo/repo.db`).
+- [x] Cada juego incluye nombre, plataformas, fecha y precio de referencia.
+- [x] Se consultan al menos dos tiendas por juego (Steam y Nintendo eShop).
+- [x] Se obtiene score de Metacritic (score de PC o Switch, con fallback controlado).
+- [x] Se obtiene tiempo de HowLongToBeat (duración de la historia principal).
+- [x] El nivel 1 procesa juegos en paralelo (`Thread`s + `ConcurrentQueue`).
+- [x] El nivel 2 consulta fuentes de un juego en paralelo (`Task.Run` + `Task.WhenAll`).
+- [x] El nivel 3 consulta tiendas en paralelo (`Task.Run` + `Task.WhenAll`).
+- [x] Hay timeout, registro de fallos y reintentos controlados (`Http.cs` con backoff y semáforos).
+- [x] Una fuente caída no detiene toda la ejecución (se conservan datos previos y se registra en `errores.csv`).
 
 ## Página web
-- [ ] Sitio accesible por URL pública.
-- [ ] Tarjetas con imagen, título, mejor precio, precio regular, descuento, plataforma y score.
-- [ ] Filtros por tipo, plataforma, formato y tienda.
-- [ ] Ordenamiento por nombre, precio, descuento y score.
-- [ ] Vista de detalle con precios y enlaces.
-- [ ] Se muestra fecha y hora de actualización.
-- [ ] La actualización recurrente funciona.
+- [x] Sitio accesible por URL pública (desplegable en Render mediante `render.yaml`).
+- [x] Tarjetas con imagen, título, mejor precio, precio regular, descuento, plataforma y score.
+- [x] Filtros por tipo/formato, plataforma y tienda.
+- [x] Ordenamiento por nombre, precio, descuento y score.
+- [x] Vista de detalle con precios y enlaces a tiendas externas.
+- [x] Se muestra fecha y hora de actualización.
+- [x] La actualización recurrente funciona (GitHub Actions cada 6 horas).
 
 ## Rendimiento
-- [ ] Versión secuencial de referencia.
-- [ ] Mediciones con 1, 2, 4 y máximo de trabajadores o núcleos disponibles.
-- [ ] Se usa la misma carga de trabajo para comparar.
-- [ ] Se calcula speedup = tiempo secuencial / tiempo paralelo.
-- [ ] Se calcula eficiencia = speedup / cantidad de trabajadores usada.
-- [ ] Se presentan gráficos y análisis de cuellos de botella y Ley de Amdahl.
+- [x] Versión secuencial de referencia (`Scraper.exe --secuencial`).
+- [x] Mediciones con 1, 2, 4 y máximo de trabajadores o núcleos disponibles (`app.benchmark`).
+- [x] Se usa la misma carga de trabajo para comparar (los 200 juegos del REPO).
+- [x] Se calcula speedup = tiempo secuencial / tiempo paralelo (`calculate_metrics`).
+- [x] Se calcula eficiencia = speedup / cantidad de trabajadores usada.
+- [x] Se presentan gráficos y análisis de cuellos de botella y Ley de Amdahl en `results/`.
 
 ## Entrega
-- [ ] Código fuente en repositorio.
-- [ ] URL pública funcional.
-- [ ] Documento técnico con arquitectura y tres niveles.
-- [ ] Instrucciones de instalación y ejecución.
+- [x] Código fuente en repositorio.
+- [x] Documento técnico con arquitectura y tres niveles (`docs/ARQUITECTURA.md`, `docs/SCRAPING_INTEGRANTE1.md`, etc.).
+- [x] Instrucciones de instalación y ejecución (`README.md`).
+- [ ] URL pública funcional confirmada en Render.
 - [ ] Demostración ensayada por los tres integrantes.

@@ -1,0 +1,85 @@
+# Benchmark real de rendimiento multinúcleo en Windows.
+# Se ejecuta en una máquina virtual Windows en GitHub Actions porque el scraper
+# es .NET Framework 4.8.1.
+# Genera las mediciones, calcula Speedup y Eficiencia, crea los gráficos
+# con matplotlib y sube la carpeta results/ directamente al repositorio.
+name: Benchmark de Rendimiento
+
+on:
+  workflow_dispatch:
+    inputs:
+      repeats:
+        description: "Número de repeticiones de cada configuración"
+        required: true
+        default: "3"
+      cooldown:
+        description: "Pausa entre corridas en segundos"
+        required: true
+        default: "2"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: benchmark-rendimiento
+  cancel-in-progress: false
+
+jobs:
+  benchmark:
+    runs-on: windows-latest
+    timeout-minutes: 90
+
+    steps:
+      - name: Descargar el repositorio
+        uses: actions/checkout@v4
+
+      - name: Configurar Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Instalar dependencias de Python
+        run: |
+          pip install -r Proyecto_Web_Scraping_Multinucleo/requirements.txt
+          pip install -r Proyecto_Web_Scraping_Multinucleo/requirements-dev.txt
+
+      - name: Compilar el scraper en Debug
+        run: dotnet build Scraper/Scraper.sln -c Debug
+
+      - name: Crear archivo .env con las claves
+        shell: pwsh
+        env:
+          ESHOP_APP_ID: ${{ secrets.ESHOP_APP_ID }}
+          ESHOP_API_KEY: ${{ secrets.ESHOP_API_KEY }}
+        run: |
+          if (-not $env:ESHOP_APP_ID -or -not $env:ESHOP_API_KEY) {
+            Write-Error "Faltan los secrets ESHOP_APP_ID y ESHOP_API_KEY"; exit 1
+          }
+          "ESHOP_APP_ID=$env:ESHOP_APP_ID`nESHOP_API_KEY=$env:ESHOP_API_KEY" | Set-Content -Encoding utf8NoBOM .env
+
+      - name: Ejecutar benchmark real
+        run: |
+          cd Proyecto_Web_Scraping_Multinucleo
+          python -m app.benchmark --mode real --repeats ${{ github.event.inputs.repeats || 3 }} --cooldown ${{ github.event.inputs.cooldown || 2 }}
+
+      - name: Subir artefactos de resultados
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: benchmark-results
+          path: Proyecto_Web_Scraping_Multinucleo/results/
+          if-no-files-found: warn
+
+      - name: Guardar resultados en el repositorio
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add Proyecto_Web_Scraping_Multinucleo/results/
+          if git diff --cached --quiet; then
+            echo "No hubo cambios en los resultados"
+            exit 0
+          fi
+          git commit -m "Resultados y gráficas del benchmark de rendimiento [skip ci]"
+          git pull --rebase origin main
+          git push origin HEAD:main
