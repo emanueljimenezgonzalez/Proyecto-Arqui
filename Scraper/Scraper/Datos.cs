@@ -1,6 +1,14 @@
 using System;
 using System.Collections.Generic;
+#if NETFRAMEWORK
 using System.Data.SQLite;
+using SQLiteConn = System.Data.SQLite.SQLiteConnection;
+using SQLiteCmd = System.Data.SQLite.SQLiteCommand;
+#else
+using Microsoft.Data.Sqlite;
+using SQLiteConn = Microsoft.Data.Sqlite.SqliteConnection;
+using SQLiteCmd = Microsoft.Data.Sqlite.SqliteCommand;
+#endif
 using System.IO;
 using System.Linq;
 using System.Text;
@@ -52,9 +60,9 @@ namespace Scraper
             return null;
         }
 
-        static SQLiteConnection AbrirRepo()
+        static SQLiteConn AbrirRepo()
         {
-            var conexion = new SQLiteConnection("Data Source=" + RutaRepo);
+            var conexion = new SQLiteConn("Data Source=" + RutaRepo);
             conexion.Open();
             return conexion;
         }
@@ -63,7 +71,7 @@ namespace Scraper
         {
             var juegos = new List<JuegoRepo>();
             using (var conexion = AbrirRepo())
-            using (var comando = new SQLiteCommand("SELECT * FROM juegos ORDER BY rowid", conexion))
+            using (var comando = new SQLiteCmd("SELECT * FROM juegos ORDER BY rowid", conexion))
             using (var lector = comando.ExecuteReader())
             {
                 while (lector.Read())
@@ -99,7 +107,7 @@ namespace Scraper
                          "reference_price REAL, image_url TEXT, steam_appid INTEGER, eshop_titulo TEXT, " +
                          "metacritic_slug TEXT, hltb_id INTEGER)";
             using (var conexion = AbrirRepo())
-            using (var comando = new SQLiteCommand(sql, conexion))
+            using (var comando = new SQLiteCmd(sql, conexion))
                 comando.ExecuteNonQuery();
         }
 
@@ -109,7 +117,7 @@ namespace Scraper
                          "steam_appid, eshop_titulo, metacritic_slug, hltb_id) VALUES " +
                          "(@id, @name, @platforms, @fecha, @precio, @imagen, @appid, @eshop, @slug, @hltb)";
             using (var conexion = AbrirRepo())
-            using (var comando = new SQLiteCommand(sql, conexion))
+            using (var comando = new SQLiteCmd(sql, conexion))
             {
                 comando.Parameters.AddWithValue("@id", juego.Id);
                 comando.Parameters.AddWithValue("@name", juego.Nombre);

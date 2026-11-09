@@ -24,7 +24,15 @@ from typing import Any
 
 ROOT = Path(__file__).resolve().parents[1]
 RESULTS_DIR = ROOT / "results"
-DEFAULT_EXE = ROOT.parent / "Scraper" / "Scraper" / "bin" / "Debug" / "net481" / "Scraper.exe"
+def find_default_exe() -> Path:
+    mac_exe = ROOT.parent / "Scraper" / "Scraper" / "bin" / "Debug" / "net10.0" / "Scraper"
+    win_exe = ROOT.parent / "Scraper" / "Scraper" / "bin" / "Debug" / "net481" / "Scraper.exe"
+    if sys.platform != "win32" and mac_exe.is_file():
+        return mac_exe
+    return win_exe
+
+
+DEFAULT_EXE = find_default_exe()
 DB_PATH = ROOT / "app" / "repo" / "repo.db"
 TIME_PATTERN = re.compile(r"Tiempo total:\s*([0-9]+(?:[.,][0-9]+)?)\s*s", re.IGNORECASE)
 ERROR_PATTERN = re.compile(r"Errores registrados:\s*(\d+)", re.IGNORECASE)
