@@ -9,7 +9,8 @@ name: Actualizar datos
 
 on:
   schedule:
-    - cron: "0 */6 * * *"   # 00:00, 06:00, 12:00 y 18:00 UTC (6 p. m., 12 a. m., 6 a. m. y 12 p. m. en Costa Rica)
+    # En el minuto 17 y no en punto: a la hora en punto GitHub atrasa o se salta corridas
+    - cron: "17 */6 * * *"  # 00:17, 06:17, 12:17 y 18:17 UTC (6:17 p. m., 12:17 a. m., 6:17 a. m. y 12:17 p. m. en Costa Rica)
   workflow_dispatch:         # botón "Run workflow" para correrlo a mano
 
 permissions:
