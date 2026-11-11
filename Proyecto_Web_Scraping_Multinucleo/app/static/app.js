@@ -38,6 +38,13 @@
     return isNaN(d) ? iso : d.toLocaleString("es-CR", { dateStyle: "medium", timeStyle: "short" });
   };
 
+  // solo fecha: se lee en UTC para que en Costa Rica no salga un día antes
+  const dateOnly = (iso) => {
+    if (!iso) return "Sin dato";
+    const d = new Date(iso);
+    return isNaN(d) ? iso : d.toLocaleDateString("es-CR", { dateStyle: "medium", timeZone: "UTC" });
+  };
+
   const scoreClass = (s) => (s == null ? "none" : s >= 75 ? "good" : s >= 50 ? "mixed" : "bad");
 
   const scoreBadge = (s, big = false) =>
@@ -186,7 +193,7 @@
         </tr>`;
     }).join("");
 
-    const hltb = g.hltb_main_hours == null ? "Sin dato" : `${g.hltb_main_hours} h`;
+    const hltb = g.hltb_main_hours == null ? "Sin dato" : `${g.hltb_main_hours.toLocaleString("es-CR")} h`;
     return `
       <div class="detail-head">
         ${cover(g, "detail-cover")}
@@ -207,7 +214,7 @@
         <div><dt>Metacritic</dt><dd>${scoreBadge(g.metacritic_score, true)}</dd></div>
         <div><dt>HowLongToBeat (historia)</dt><dd>${esc(hltb)}</dd></div>
         <div><dt>Precio sugerido</dt><dd>${price(g.reference_price)}</dd></div>
-        <div><dt>Lanzamiento</dt><dd>${esc(g.release_date || "Sin dato")}</dd></div>
+        <div><dt>Lanzamiento</dt><dd>${esc(dateOnly(g.release_date))}</dd></div>
         <div><dt>Tipo</dt><dd>${esc(g.formats.map((f) => FORMAT_LABELS[f] || f).join(", ") || "Sin dato")}</dd></div>
       </dl>
 
