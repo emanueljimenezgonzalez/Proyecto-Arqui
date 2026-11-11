@@ -101,7 +101,7 @@
     const first = select.options[0].outerHTML;
     select.innerHTML = first + options
       .map((o) => (typeof o === "string" ? { value: o, label: o } : o))
-      .map((o) => `<option value="${esc(o.value)}">${esc(o.label)}</option>`).join("");
+      .map((o) => `<option value="${esc(o.value)}"${o.disabled ? " disabled" : ""}>${esc(o.label)}</option>`).join("");
   }
 
   // ---------- meta ----------
@@ -110,8 +110,11 @@
     money = new Intl.NumberFormat("es-CR", { style: "currency", currency: meta.currency || "USD" });
     const f = meta.filters;
     fillSelect("platform", f.platforms);
-    // Tipo: físico, digital u otro, con la cantidad de juegos de cada uno
-    fillSelect("format", f.formats.map((o) => ({ value: o.value, label: `${o.label} (${o.count})` })));
+    // Tipo: físico, digital u otro, con la cantidad de juegos de cada uno.
+    // Las opciones sin juegos se ven pero no se pueden escoger.
+    fillSelect("format", f.formats.map((o) => ({
+      value: o.value, label: `${o.label} (${o.count})`, disabled: o.count === 0,
+    })));
     fillSelect("store", f.stores);
     $("#last-updated").textContent = dateTime(meta.last_updated);
     $("#total-games").textContent = `${meta.total_games} juegos en el catálogo`;

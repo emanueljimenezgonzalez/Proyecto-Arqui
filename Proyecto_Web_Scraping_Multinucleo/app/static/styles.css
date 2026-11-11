@@ -157,6 +157,8 @@ input:focus-visible, select:focus-visible, button:focus-visible, .card:focus-vis
 .updated { margin: 1rem 0 0; color: var(--muted); font-size: .9rem; }
 
 .site-footer { text-align: center; color: var(--muted); font-size: .8rem; padding: 1.5rem 1rem; border-top: 1px solid var(--border); }
+.site-footer p { margin: .2rem 0; }
+.site-footer .team { color: var(--text); font-weight: 600; }
 
 @media (max-width: 640px) {
   .field-search { grid-column: 1 / -1; }
