@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
@@ -22,9 +23,6 @@ namespace Scraper
             var oferta = new Oferta { Tienda = "Nintendo eShop", Formato = "digital", Plataforma = "Switch" };
 
             JArray hits = await Buscar(new { query = juego.EshopTitulo, hitsPerPage = 10 });
-            if (hits == null)
-                return oferta;
-
             foreach (JToken hit in hits)
             {
                 if ((string)hit["platform"] != "Nintendo Switch")
@@ -35,9 +33,10 @@ namespace Scraper
                 oferta.PrecioActual = (double?)hit["price"]?["finalPrice"];
                 oferta.PrecioRegular = (double?)hit["price"]?["regPrice"];
                 oferta.Url = "https://www.nintendo.com" + (string)hit["url"];
-                break;
+                return oferta;
             }
-            return oferta;
+            // Si no aparece se cuenta como error, asi se conserva el precio anterior
+            throw new Exception("No se encontro el juego en el eShop");
         }
 
         // Pagina del catalogo por popularidad, para generar el REPO
@@ -51,8 +50,9 @@ namespace Scraper
         static async Task<JArray> Buscar(object cuerpo)
         {
             string texto = await Http.Post("eshop", UrlBusqueda, JsonConvert.SerializeObject(cuerpo), encabezados);
+            // Un 404 aqui significa que el buscador cambio, no que falte un juego
             if (texto == null)
-                return null;
+                throw new Exception("El buscador del eShop respondio 404");
             return (JArray)JObject.Parse(texto)["hits"];
         }
 

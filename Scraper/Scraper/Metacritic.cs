@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using System.Text.RegularExpressions;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
@@ -7,8 +8,8 @@ namespace Scraper
 {
     public static class Metacritic
     {
-        // Devuelve el score de PC; si no tiene, el de Switch; si ninguno tiene, null
-        public static async Task<int?> Consultar(JuegoRepo juego)
+        // Devuelve el score de cada plataforma del REPO (PC y Switch), o null si no hay pagina
+        public static async Task<Dictionary<string, int>> Consultar(JuegoRepo juego)
         {
             string html = await Http.Get("metacritic", "https://www.metacritic.com/game/" + juego.MetacriticSlug + "/");
             if (html == null)
@@ -30,27 +31,24 @@ namespace Scraper
                 if (plataformas == null)
                     return null;
 
-                int? pc = null;
-                int? switchScore = null;
+                var scores = new Dictionary<string, int>();
                 foreach (JToken referencia in plataformas)
                 {
                     JObject plataforma = Buscar(datos, referencia) as JObject;
                     if (plataforma == null)
                         continue;
                     string nombre = (string)Buscar(datos, plataforma["name"]);
-                    if (nombre != "PC" && nombre != "Nintendo Switch")
+                    string clave = nombre == "Nintendo Switch" ? "Switch" : nombre;
+                    if (!juego.Plataformas.Contains(clave))
                         continue;
 
                     JObject resumen = Buscar(datos, plataforma["criticScoreSummary"]) as JObject;
                     JToken score = resumen == null ? null : Buscar(datos, resumen["score"]);
                     if (score == null || score.Type != JTokenType.Integer)
                         continue;
-                    if (nombre == "PC")
-                        pc = (int)score;
-                    else
-                        switchScore = (int)score;
+                    scores[clave] = (int)score;
                 }
-                return pc ?? switchScore;
+                return scores;
             }
             throw new Exception("No se encontraron los datos del juego en la pagina");
         }

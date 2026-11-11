@@ -89,7 +89,8 @@ namespace Scraper
                 }
                 catch (HttpRequestException ex)
                 {
-                    error = ex.Message;
+                    // En .NET Framework la causa real (DNS, TLS, conexion) viene en InnerException
+                    error = ex.InnerException == null ? ex.Message : ex.Message + " " + ex.InnerException.Message;
                 }
                 catch (TaskCanceledException)
                 {

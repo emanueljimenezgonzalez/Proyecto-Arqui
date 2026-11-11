@@ -9,6 +9,7 @@ class StoreOffer(BaseModel):
     format: Optional[str] = None
     platform: Optional[str] = None
     url: Optional[str] = None
+    updated_at: Optional[str] = None
 
 
 class GameRecord(BaseModel):
@@ -19,6 +20,9 @@ class GameRecord(BaseModel):
     reference_price: Optional[float] = None
     image_url: Optional[str] = None
     metacritic_score: Optional[float] = None
+    metacritic_scores: Optional[dict[str, int]] = None
     hltb_main_hours: Optional[float] = None
+    hltb_extra_hours: Optional[float] = None
+    hltb_completionist_hours: Optional[float] = None
     offers: list[StoreOffer] = Field(default_factory=list)
     updated_at: Optional[str] = None

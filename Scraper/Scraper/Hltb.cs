@@ -10,8 +10,8 @@ namespace Scraper
 {
     public static class Hltb
     {
-        // Devuelve las horas de la historia principal, o null si no hay dato
-        public static async Task<double?> Consultar(JuegoRepo juego)
+        // Devuelve los tres tiempos del juego, o null si no tiene pagina en HowLongToBeat
+        public static async Task<TiemposHltb> Consultar(JuegoRepo juego)
         {
             if (juego.HltbId == null)
                 return null;
@@ -24,11 +24,22 @@ namespace Scraper
             if (!m.Success)
                 throw new Exception("No se encontro __NEXT_DATA__ en la pagina");
 
-            // comp_main viene en segundos
-            JToken compMain = JObject.Parse(m.Groups[1].Value).SelectTokens("$..comp_main").FirstOrDefault();
-            if (compMain == null || compMain.Type != JTokenType.Integer || (int)compMain == 0)
+            JObject datos = JObject.Parse(m.Groups[1].Value);
+            return new TiemposHltb
+            {
+                Principal = Horas(datos, "comp_main"),
+                Extras = Horas(datos, "comp_plus"),
+                Completo = Horas(datos, "comp_100")
+            };
+        }
+
+        // Los tiempos vienen en segundos; 0 significa que no hay dato
+        static double? Horas(JObject datos, string campo)
+        {
+            JToken valor = datos.SelectTokens("$.." + campo).FirstOrDefault();
+            if (valor == null || (valor.Type != JTokenType.Integer && valor.Type != JTokenType.Float) || (double)valor == 0)
                 return null;
-            return Math.Round((int)compMain / 3600.0, 1);
+            return Math.Round((double)valor / 3600.0, 1);
         }
 
         // Solo se usa al generar el REPO

@@ -12,7 +12,8 @@ from datetime import datetime, timedelta, timezone
 MIN_JUEGOS = 200
 OFERTAS = 2  # Steam y Nintendo eShop
 CAMPOS = ("id", "name", "platforms", "release_date", "reference_price", "image_url",
-          "metacritic_score", "hltb_main_hours", "offers", "updated_at")
+          "metacritic_score", "metacritic_scores", "hltb_main_hours", "hltb_extra_hours",
+          "hltb_completionist_hours", "offers", "updated_at")
 
 
 def fallar(mensaje: str) -> None:

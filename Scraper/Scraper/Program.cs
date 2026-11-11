@@ -15,6 +15,7 @@ namespace Scraper
         //   Scraper.exe --secuencial    version secuencial de referencia
         //   --limite K                  procesa solo los primeros K juegos del REPO
         //   Scraper.exe --generar-repo  arma el REPO (200 juegos, o K con --limite)
+        //   --sin-nivel2 / --sin-nivel3 apaga ese nivel, para medir su efecto en el benchmark
         // Devuelve 1 si no pudo correr, para que GitHub Actions lo marque como fallo
         static int Main(string[] args)
         {
@@ -23,6 +24,8 @@ namespace Scraper
             bool secuencial = args.Contains("--secuencial");
             int workers = LeerNumero(args, "--workers", Environment.ProcessorCount);
             int limite = LeerNumero(args, "--limite", 0);
+            Scraping.SinNivel2 = args.Contains("--sin-nivel2");
+            Scraping.SinNivel3 = args.Contains("--sin-nivel3");
 
             if (Datos.Clave("ESHOP_APP_ID") == null || Datos.Clave("ESHOP_API_KEY") == null)
             {
@@ -55,7 +58,8 @@ namespace Scraper
             if (secuencial)
                 Console.WriteLine("Modo secuencial, " + juegos.Count + " juegos");
             else
-                Console.WriteLine("Modo paralelo con " + workers + " hilos, " + juegos.Count + " juegos");
+                Console.WriteLine("Modo paralelo con " + workers + " hilos, " + juegos.Count + " juegos" +
+                                  (Scraping.SinNivel2 ? ", sin nivel 2" : "") + (Scraping.SinNivel3 ? ", sin nivel 3" : ""));
 
             var reloj = Stopwatch.StartNew();
             Juego[] resultados = secuencial ? Scraping.Secuencial(juegos) : Scraping.Paralelo(juegos, workers);
