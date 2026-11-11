@@ -223,11 +223,11 @@ def catalog_meta(games: list[dict]) -> dict:
         "data_source": "repo" if path == REPO_DATA_FILE else path.name,
         "filters": {
             "platforms": sorted({p for g in games for p in g["platforms"] if p}),
+            # Siempre las tres opciones del filtro "Tipo", aunque alguna tenga 0 juegos
             "formats": [
                 {"value": f, "label": FORMAT_LABELS[f],
                  "count": sum(1 for g in games if f in g["formats"])}
-                for f in ("digital", "fisico")
-                if any(f in g["formats"] for g in games)
+                for f in ("digital", "fisico", "otro")
             ],
             "stores": sorted({s for g in games for s in g["stores"]}),
             "genres": sorted({
