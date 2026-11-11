@@ -162,4 +162,8 @@ input:focus-visible, select:focus-visible, button:focus-visible, .card:focus-vis
   .field-search { grid-column: 1 / -1; }
   .detail { padding: 1rem; }
   .detail-head { grid-template-columns: 1fr; }
+  /* en celular se ocultan Plataforma y Formato para que quepan el precio y el enlace */
+  .offers th:nth-child(2), .offers td:nth-child(2),
+  .offers th:nth-child(3), .offers td:nth-child(3) { display: none; }
+  .offers th, .offers td { white-space: normal; padding: .5rem .4rem; }
 }
