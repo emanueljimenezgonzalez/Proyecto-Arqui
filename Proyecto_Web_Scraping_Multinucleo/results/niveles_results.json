@@ -1,0 +1,58 @@
+[
+  {
+    "mode": "efecto_por_nivel",
+    "config": "completo",
+    "games": 25,
+    "workers": 4,
+    "median_seconds": 5.608,
+    "times_slower_than_full": 1.0,
+    "repeats": 3,
+    "samples": "[4.866, 5.608, 6.113]",
+    "errors_median": 0.0,
+    "machine_cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "executable": "C:\\Users\\tonyc\\OneDrive\\Escritorio\\Proyecto Arqui\\Proyecto-Arqui\\Scraper\\Scraper\\bin\\Debug\\net481\\Scraper.exe"
+  },
+  {
+    "mode": "efecto_por_nivel",
+    "config": "sin_nivel2",
+    "games": 25,
+    "workers": 4,
+    "median_seconds": 8.776,
+    "times_slower_than_full": 1.564907,
+    "repeats": 3,
+    "samples": "[8.776, 8.717, 8.822]",
+    "errors_median": 0.0,
+    "machine_cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "executable": "C:\\Users\\tonyc\\OneDrive\\Escritorio\\Proyecto Arqui\\Proyecto-Arqui\\Scraper\\Scraper\\bin\\Debug\\net481\\Scraper.exe"
+  },
+  {
+    "mode": "efecto_por_nivel",
+    "config": "sin_nivel3",
+    "games": 25,
+    "workers": 4,
+    "median_seconds": 8.147,
+    "times_slower_than_full": 1.452746,
+    "repeats": 3,
+    "samples": "[8.147, 22.184, 7.009]",
+    "errors_median": 0.0,
+    "machine_cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "executable": "C:\\Users\\tonyc\\OneDrive\\Escritorio\\Proyecto Arqui\\Proyecto-Arqui\\Scraper\\Scraper\\bin\\Debug\\net481\\Scraper.exe"
+  },
+  {
+    "mode": "efecto_por_nivel",
+    "config": "sin_nivel2_y_3",
+    "games": 25,
+    "workers": 4,
+    "median_seconds": 20.063,
+    "times_slower_than_full": 3.577568,
+    "repeats": 3,
+    "samples": "[22.603, 20.063, 12.39]",
+    "errors_median": 0.0,
+    "machine_cpu_count": 12,
+    "platform": "Windows-11-10.0.26300-SP0",
+    "executable": "C:\\Users\\tonyc\\OneDrive\\Escritorio\\Proyecto Arqui\\Proyecto-Arqui\\Scraper\\Scraper\\bin\\Debug\\net481\\Scraper.exe"
+  }
+]

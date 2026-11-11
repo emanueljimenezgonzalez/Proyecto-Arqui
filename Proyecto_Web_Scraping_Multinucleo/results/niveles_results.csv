@@ -1,0 +1,5 @@
+mode,config,games,workers,median_seconds,times_slower_than_full,repeats,samples,errors_median,machine_cpu_count,platform,executable
+efecto_por_nivel,completo,25,4,5.608,1.0,3,"[4.866, 5.608, 6.113]",0.0,12,Windows-11-10.0.26300-SP0,C:\Users\tonyc\OneDrive\Escritorio\Proyecto Arqui\Proyecto-Arqui\Scraper\Scraper\bin\Debug\net481\Scraper.exe
+efecto_por_nivel,sin_nivel2,25,4,8.776,1.564907,3,"[8.776, 8.717, 8.822]",0.0,12,Windows-11-10.0.26300-SP0,C:\Users\tonyc\OneDrive\Escritorio\Proyecto Arqui\Proyecto-Arqui\Scraper\Scraper\bin\Debug\net481\Scraper.exe
+efecto_por_nivel,sin_nivel3,25,4,8.147,1.452746,3,"[8.147, 22.184, 7.009]",0.0,12,Windows-11-10.0.26300-SP0,C:\Users\tonyc\OneDrive\Escritorio\Proyecto Arqui\Proyecto-Arqui\Scraper\Scraper\bin\Debug\net481\Scraper.exe
+efecto_por_nivel,sin_nivel2_y_3,25,4,20.063,3.577568,3,"[22.603, 20.063, 12.39]",0.0,12,Windows-11-10.0.26300-SP0,C:\Users\tonyc\OneDrive\Escritorio\Proyecto Arqui\Proyecto-Arqui\Scraper\Scraper\bin\Debug\net481\Scraper.exe
