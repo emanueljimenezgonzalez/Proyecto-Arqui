@@ -10,6 +10,7 @@ import sys
 from datetime import datetime, timedelta, timezone
 
 MIN_JUEGOS = 200
+OFERTAS = 2  # Steam y Nintendo eShop
 CAMPOS = ("id", "name", "platforms", "release_date", "reference_price", "image_url",
           "metacritic_score", "hltb_main_hours", "offers", "updated_at")
 
@@ -43,6 +44,8 @@ def main() -> None:
         faltan = [c for c in CAMPOS if c not in g]
         if faltan:
             fallar(f"al juego {g.get('id')} le faltan los campos {faltan}")
+        if len(g["offers"]) != OFERTAS:
+            fallar(f"el juego {g.get('id')} tiene {len(g['offers'])} ofertas (deben ser {OFERTAS})")
 
     # Que el scraper realmente haya corrido ahora (si no tenía claves, no escribe nada nuevo)
     fechas = [g["updated_at"] for g in juegos if g.get("updated_at")]

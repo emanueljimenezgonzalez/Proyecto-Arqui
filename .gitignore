@@ -17,6 +17,9 @@ Scraper/logs/
 .DS_Store
 **/.DS_Store
 
+# Cache de NuGet que se crea al compilar en macOS
+.local/
+
 # Python
 __pycache__/
 *.py[cod]
