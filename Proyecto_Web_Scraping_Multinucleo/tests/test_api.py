@@ -116,7 +116,9 @@ def test_meta(client):
     assert meta["last_updated"] == "2026-11-08T12:00:00+00:00"
     assert meta["filters"]["platforms"] == ["PC", "PS5", "Switch"]
     assert meta["filters"]["stores"] == ["Amazon", "Steam"]
-    assert [f["value"] for f in meta["filters"]["formats"]] == ["digital", "fisico"]
+    # el filtro "Tipo" siempre trae las tres opciones, con su cantidad de juegos
+    assert [(f["value"], f["count"]) for f in meta["filters"]["formats"]] == [
+        ("digital", 1), ("fisico", 2), ("otro", 0)]
 
 
 def test_broken_json_keeps_last_valid_data(client, tmp_path):
