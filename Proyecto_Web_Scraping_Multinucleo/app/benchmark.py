@@ -3,6 +3,9 @@
 Ejemplo Windows, desde la raíz del repositorio:
     python -m app.benchmark --mode real --repeats 3
 
+Efecto de cada nivel (mismos hilos en el nivel 1, apagando el nivel 2 y/o el 3):
+    python -m app.benchmark --mode niveles --workers 4 --repeats 3
+
 El modo real ejecuta Scraper.exe, que mide el trabajo dentro del proceso y muestra
 "Tiempo total: X s". Se utiliza ese tiempo para excluir el arranque del proceso.
 """
@@ -36,6 +39,14 @@ DEFAULT_EXE = find_default_exe()
 DB_PATH = ROOT / "app" / "repo" / "repo.db"
 TIME_PATTERN = re.compile(r"Tiempo total:\s*([0-9]+(?:[.,][0-9]+)?)\s*s", re.IGNORECASE)
 ERROR_PATTERN = re.compile(r"Errores registrados:\s*(\d+)", re.IGNORECASE)
+
+# Configuraciones del modo "niveles": nombre y opciones extra del scraper
+LEVEL_CONFIGS = [
+    ("completo", []),
+    ("sin_nivel2", ["--sin-nivel2"]),
+    ("sin_nivel3", ["--sin-nivel3"]),
+    ("sin_nivel2_y_3", ["--sin-nivel2", "--sin-nivel3"]),
+]
 
 
 def calculate_metrics(sequential_seconds: float, parallel_seconds: float,
@@ -77,7 +88,7 @@ def count_repo_games(db_path: Path = DB_PATH) -> int:
 
 
 def run_scraper(executable: Path, mode: str, workers: int | None = None,
-                timeout_seconds: int = 7200) -> dict[str, Any]:
+                timeout_seconds: int = 7200, extra_args: list[str] | None = None) -> dict[str, Any]:
     if not executable.is_file():
         raise FileNotFoundError(
             f"No se encontró Scraper.exe en {executable}. "
@@ -92,6 +103,7 @@ def run_scraper(executable: Path, mode: str, workers: int | None = None,
         if workers is None or workers < 1:
             raise ValueError("Indica un número válido de workers.")
         command.extend(["--workers", str(workers)])
+    command.extend(extra_args or [])
 
     completed = subprocess.run(
         command, cwd=str(ROOT.parent), capture_output=True, text=True,
@@ -165,9 +177,68 @@ def run_real(executable: Path = DEFAULT_EXE, repeats: int = 3,
     return rows
 
 
-def write_results(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR) -> tuple[Path, Path]:
+def run_levels(executable: Path = DEFAULT_EXE, workers: int = 4, repeats: int = 3,
+               timeout_seconds: int = 7200, cooldown_seconds: float = 2.0) -> list[dict[str, Any]]:
+    """Mide el efecto de los niveles 2 y 3 con la misma cantidad de hilos en el nivel 1."""
+    if repeats < 1:
+        raise ValueError("repeats debe ser al menos 1.")
+    game_count = count_repo_games()
+    samples: dict[str, list[dict[str, Any]]] = {name: [] for name, _ in LEVEL_CONFIGS}
+
+    # Igual que en run_real, cada repetición pasa por todas las configuraciones
+    for _ in range(repeats):
+        for name, extra_args in LEVEL_CONFIGS:
+            samples[name].append(
+                run_scraper(executable, "parallel", workers, timeout_seconds, extra_args)
+            )
+            if cooldown_seconds:
+                time.sleep(cooldown_seconds)
+
+    full_median = statistics.median(x["seconds"] for x in samples["completo"])
+    rows: list[dict[str, Any]] = []
+    for name, _ in LEVEL_CONFIGS:
+        median = statistics.median(x["seconds"] for x in samples[name])
+        rows.append({
+            "mode": "efecto_por_nivel",
+            "config": name,
+            "games": game_count,
+            "workers": workers,
+            "median_seconds": round(median, 6),
+            "times_slower_than_full": round(median / full_median, 6),
+            "repeats": repeats,
+            "samples": json.dumps([round(x["seconds"], 6) for x in samples[name]]),
+            "errors_median": statistics.median(x["errors"] or 0 for x in samples[name]),
+            "machine_cpu_count": os.cpu_count() or 1,
+            "platform": platform.platform(),
+            "executable": str(executable),
+        })
+    return rows
+
+
+def write_level_chart(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR) -> Path:
+    try:
+        import matplotlib.pyplot as plt
+    except ImportError as exc:
+        raise RuntimeError("Instala matplotlib con: pip install -r requirements-dev.txt") from exc
     output_dir.mkdir(parents=True, exist_ok=True)
-    csv_path, json_path = output_dir / "benchmark_results.csv", output_dir / "benchmark_results.json"
+    labels = {"completo": "Completo", "sin_nivel2": "Sin nivel 2",
+              "sin_nivel3": "Sin nivel 3", "sin_nivel2_y_3": "Sin niveles 2 y 3"}
+    fig, ax = plt.subplots()
+    ax.bar([labels[row["config"]] for row in rows], [float(row["median_seconds"]) for row in rows])
+    ax.set_ylabel("Tiempo mediano (segundos)")
+    ax.set_title(f"Efecto de cada nivel con {rows[0]['workers']} hilos en el nivel 1")
+    ax.grid(True, axis="y", alpha=0.3)
+    fig.tight_layout()
+    path = output_dir / "efecto_por_nivel.png"
+    fig.savefig(path, dpi=160)
+    plt.close(fig)
+    return path
+
+
+def write_results(rows: list[dict[str, Any]], output_dir: Path = RESULTS_DIR,
+                  name: str = "benchmark_results") -> tuple[Path, Path]:
+    output_dir.mkdir(parents=True, exist_ok=True)
+    csv_path, json_path = output_dir / f"{name}.csv", output_dir / f"{name}.json"
     if not rows:
         raise ValueError("No hay resultados para guardar.")
     with csv_path.open("w", newline="", encoding="utf-8") as file:
@@ -246,7 +317,9 @@ def run_demo(games_count: int, repeats: int, work_ms: int) -> list[dict[str, Any
 
 def main() -> None:
     parser = argparse.ArgumentParser(description="Medición del scraper multinúcleo")
-    parser.add_argument("--mode", choices=["real", "demo"], default="real")
+    parser.add_argument("--mode", choices=["real", "demo", "niveles"], default="real")
+    parser.add_argument("--workers", type=int, default=4,
+                        help="Hilos del nivel 1 en el modo niveles")
     parser.add_argument("--exe", type=Path, default=DEFAULT_EXE,
                         help="Ruta a Scraper.exe compilado")
     parser.add_argument("--repeats", type=int, default=3)
@@ -260,6 +333,22 @@ def main() -> None:
     args = parser.parse_args()
     if args.repeats < 1 or args.timeout < 1 or args.cooldown < 0:
         parser.error("repeats y timeout deben ser positivos y cooldown no puede ser negativo.")
+
+    if args.mode == "niveles":
+        if args.workers < 1:
+            parser.error("workers debe ser al menos 1.")
+        rows = run_levels(args.exe, args.workers, args.repeats, args.timeout, args.cooldown)
+        csv_path, json_path = write_results(rows, name="niveles_results")
+        chart = write_level_chart(rows)
+        print("Medición por niveles terminada.")
+        print("CSV:", csv_path)
+        print("JSON:", json_path)
+        print("Gráfico:", chart)
+        print(f"{'Configuración':>18} {'Mediana (s)':>12} {'Veces más lento':>16}")
+        for row in rows:
+            print(f"{row['config']:>18} {row['median_seconds']:>12.3f} "
+                  f"{row['times_slower_than_full']:>16.2f}")
+        return
 
     if args.mode == "real":
         rows = run_real(args.exe, args.repeats, args.timeout, args.cooldown, args.max_workers)

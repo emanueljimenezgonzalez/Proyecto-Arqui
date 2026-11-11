@@ -32,6 +32,8 @@
 
   const price = (n) => (n == null ? "—" : money.format(n));
 
+  const hours = (h) => (h == null ? "Sin dato" : `${h.toLocaleString("es-CR")} h`);
+
   const dateTime = (iso) => {
     if (!iso) return "Sin dato";
     const d = new Date(iso);
@@ -184,9 +186,12 @@
     const rows = g.offers.map((o) => {
       const url = safeUrl(o.url);
       const best = o.available && o.current_price === g.best_price;
+      // si la tienda falló en la última corrida, su precio es de una fecha anterior
+      const old = o.updated_at && o.updated_at !== g.updated_at;
       return `
         <tr class="${o.available ? "" : "unavailable"} ${best ? "best" : ""}">
-          <td><strong>${esc(o.store)}</strong>${best ? ` <span class="tag-best">Mejor precio</span>` : ""}</td>
+          <td><strong>${esc(o.store)}</strong>${best ? ` <span class="tag-best">Mejor precio</span>` : ""}${
+            old ? `<small class="sub">Precio del ${esc(dateTime(o.updated_at))}</small>` : ""}</td>
           <td>${esc(o.platform || "—")}</td>
           <td>${esc(FORMAT_LABELS[o.format] || o.format)}</td>
           <td class="num">${o.available ? price(o.current_price) : "No disponible"}</td>
@@ -196,7 +201,9 @@
         </tr>`;
     }).join("");
 
-    const hltb = g.hltb_main_hours == null ? "Sin dato" : `${g.hltb_main_hours.toLocaleString("es-CR")} h`;
+    const scores = Object.entries(g.metacritic_scores || {}).sort()
+      .map(([platform, score]) => `${platform} ${score}`).join(" · ");
+    const hltbMore = g.hltb_extra_hours != null || g.hltb_completionist_hours != null;
     return `
       <div class="detail-head">
         ${cover(g, "detail-cover")}
@@ -214,8 +221,11 @@
       </div>
 
       <dl class="facts">
-        <div><dt>Metacritic</dt><dd>${scoreBadge(g.metacritic_score, true)}</dd></div>
-        <div><dt>HowLongToBeat (historia)</dt><dd>${esc(hltb)}</dd></div>
+        <div><dt>Metacritic</dt><dd>${scoreBadge(g.metacritic_score, true)}${
+          scores ? `<small class="sub">${esc(scores)}</small>` : ""}</dd></div>
+        <div><dt>HowLongToBeat (historia)</dt><dd>${esc(hours(g.hltb_main_hours))}${
+          hltbMore ? `<small class="sub">Con extras: ${esc(hours(g.hltb_extra_hours))}</small>
+            <small class="sub">Al 100%: ${esc(hours(g.hltb_completionist_hours))}</small>` : ""}</dd></div>
         <div><dt>Precio sugerido</dt><dd>${price(g.reference_price)}</dd></div>
         <div><dt>Lanzamiento</dt><dd>${esc(dateOnly(g.release_date))}</dd></div>
         <div><dt>Tipo</dt><dd>${esc(g.formats.map((f) => FORMAT_LABELS[f] || f).join(", ") || "Sin dato")}</dd></div>
