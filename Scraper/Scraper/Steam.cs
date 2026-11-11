@@ -1,3 +1,4 @@
+using System;
 using System.Threading.Tasks;
 using Newtonsoft.Json.Linq;
 
@@ -17,7 +18,7 @@ namespace Scraper
 
             JToken datos = await Detalles(juego.SteamAppId);
             if (datos == null)
-                return oferta;
+                throw new Exception("No se encontro el juego en Steam");
 
             // Steam da los precios en centavos de dolar (cc=us)
             JToken precio = datos["price_overview"];
