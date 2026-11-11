@@ -1,5 +1,7 @@
 import sqlite3
+from pathlib import Path
 import pytest
+from app import benchmark
 from app.benchmark import (
     calculate_metrics, available_worker_counts, parse_scraper_output,
     count_repo_games,
@@ -61,3 +63,21 @@ def test_count_repo_games(tmp_path):
 def test_count_repo_games_rejects_missing_database(tmp_path):
     with pytest.raises(FileNotFoundError):
         count_repo_games(tmp_path / "missing.db")
+
+
+def test_run_levels_passes_flags_and_compares_with_full(monkeypatch):
+    times = {"": 10.0, "--sin-nivel2": 30.0, "--sin-nivel3": 15.0,
+             "--sin-nivel2 --sin-nivel3": 40.0}
+    calls = []
+
+    def fake_run(executable, mode, workers, timeout, extra_args):
+        calls.append(extra_args)
+        return {"seconds": times[" ".join(extra_args)], "errors": 0}
+
+    monkeypatch.setattr(benchmark, "run_scraper", fake_run)
+    monkeypatch.setattr(benchmark, "count_repo_games", lambda: 200)
+    rows = benchmark.run_levels(Path("Scraper.exe"), workers=4, repeats=1, cooldown_seconds=0)
+
+    assert [row["config"] for row in rows] == ["completo", "sin_nivel2", "sin_nivel3", "sin_nivel2_y_3"]
+    assert rows[1]["times_slower_than_full"] == pytest.approx(3.0)
+    assert ["--sin-nivel2", "--sin-nivel3"] in calls
